@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
   </head>
-  <body>
+  <body class="page">
     <header class="page-header">
       <h1 class="visually-hidden">Магазин Мишка</h1>
       <div class="page-header__logo">
@@ -76,7 +76,7 @@
           <p class="production-process__title">Процесс производства</p>
           <div class="production-process__video">
             <img src="http://placehold.it/150x100" width="260" height="195"  alt="Товар">
-            <a href="#" class="production-process__video--icon-play"></a>
+            <a href="#" class="production-process production-process__video--icon-play"></a>
           </div>
           <span class="production-process__info">По просьбам наших любимых фолловеров мы сняли для вас подробное</span>
           <a href="#" class="production-process__order button">Сделать заказ</a>
@@ -101,11 +101,11 @@
           <form method="" action="https://echo.htmlacademy.ru/" class="modal-basket__form">
             <div class="modal-basket__controls">
               <input type="radio" name="size" id="sizeS" value="S">
-              <label for="sizeS" class="modalbasket__size" value="S">S</label>
+              <label for="sizeS" class="modal-basket__size" value="S">S</label>
               <input type="radio" name="size" id="sizeM" value="M">
-              <label for="sizeM" class="modalbasket__size" value="M">M</label>
+              <label for="sizeM" class="modal-basket__size" value="M">M</label>
               <input type="radio" name="size" id="sizeL" value="L">
-              <label for="sizeL" class="modalbasket__size" value="L">L</label>
+              <label for="sizeL" class="modal-basket__size" value="L">L</label>
             </div>
             <button type="submit" class="modal-basket__button">Добавить</button>
             </form>
