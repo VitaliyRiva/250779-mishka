@@ -1,5 +1,7 @@
 //normalize
-@import "normalize.scss"
+@import "normalize.scss";
+ // Переменные
+@import "variables.scss";
 // Блоки
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
@@ -21,3 +23,4 @@
 
 // Глобал
 @import "global/fonts.scss";
+
