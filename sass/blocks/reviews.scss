@@ -1,0 +1,14 @@
+.reviews {
+  border: 1px solid blue;
+  background-color: #fff;
+  color: $font-black;
+  padding-bottom: 45px;
+}
+
+.reviews__title {
+  margin-top: 34px;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}

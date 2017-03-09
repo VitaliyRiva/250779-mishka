@@ -1,0 +1,25 @@
+.main-nav {
+  background: #fff;
+  color: $font-black;
+}
+
+.main-nav__items {
+  padding: 0;
+  margin: 0;
+  list-style: $list-none;
+  text-decoration: $link-decor;
+}
+
+.main-nav__item {
+  border: 1px solid #ececec;
+}
+
+.main-nav__item a {
+  display: block;
+  padding: 31px 0 31px;
+  font-family: 'Open sans', sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $font-black
+}

@@ -1,0 +1,23 @@
+.top-product {
+  border: 1px solid blue;
+  background: #fff;
+  color:$font-gray;
+  padding-bottom: 45px;
+}
+
+.top-product__title {
+  margin-top: 34px;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  color: $font-black;
+}
+
+.top-product__note {
+  font-family: 'Open Sans',sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: $mint-color;
+}

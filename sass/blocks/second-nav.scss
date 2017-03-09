@@ -1,0 +1,30 @@
+.second-nav {
+  padding: 0;
+  margin: 0;
+  list-style: $list-none;
+  text-decoration: $link-decor;
+}
+
+.secon-nav__item {
+  &--lamp {
+    background: $mint-color url('img/icon-interior.svg') 90% 50% no-repeat;
+  }
+  &--detail {
+    background:$dark-mint-color url('img/icon-toy.svg') 90% 50% no-repeat;
+  }
+}
+
+.secon-nav__item a {
+  display: inline-block;
+  padding-top:31px;
+  padding-bottom:31px;
+  padding-left: 30px;
+}
+
+.second-nav__text {
+  font-family: 'Open sans', sans-serif;
+  font-size: 19px;
+  line-height:24px;
+  font-weight: bold;
+  color: #fff;
+}
