@@ -2,15 +2,14 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  text-decoration: none;
 }
 
 .second-nav__item {
   &--bulb {
-    background: $mint-color url('img/icon-interior.svg') 90% 50% no-repeat;
+    background: $mint-color url('../img/icon-interior.svg') 90% 50% no-repeat;
   }
   &--detail {
-    background:$dark-mint-color url('img/icon-toy.svg') 90% 50% no-repeat;
+    background:$dark-mint-color url('../img/icon-toy.svg') 90% 50% no-repeat;
   }
 }
 
@@ -19,6 +18,7 @@
   padding-top:31px;
   padding-bottom:31px;
   padding-left: 30px;
+  text-decoration: none;
 }
 
 .second-nav__text {
