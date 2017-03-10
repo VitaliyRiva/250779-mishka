@@ -1,6 +1,14 @@
 .main-nav {
   background: #fff;
   color: $font-black;
+  border: 1px solid blue;
+}
+
+.main-nav__wrapper {
+  width: 260px;
+  margin: auto;
+  padding: 0 20px;
+  border: 1px solid red;
 }
 
 .main-nav__items {
@@ -17,9 +25,11 @@
 .main-nav__item a {
   display: block;
   padding: 31px 0 31px;
-  font-family: 'Open sans', sans-serif;
+  font-family: "Open sans", sans-serif;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
-  color: $font-black
+  color: #000000;
+  text-align: center;
+  text-decoration: none
 }

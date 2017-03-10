@@ -2,12 +2,18 @@
   border: 1px solid blue;
   background: #fff;
   color:$font-gray;
-  padding-bottom: 45px;
+  padding: 35px 0 0;
+}
+
+.top-product__wrapper {
+  width: 260px;
+  margin: auto;
+  padding: 0 20px;
+  border: 1px solid red;
 }
 
 .top-product__title {
-  margin-top: 34px;
-  font-family: 'Open Sans',sans-serif;
+  font-family: "Open Sans",sans-serif;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
@@ -15,9 +21,16 @@
 }
 
 .top-product__note {
-  font-family: 'Open Sans',sans-serif;
+  font-family: "Open Sans",sans-serif;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
   color: $mint-color;
+}
+
+.top-product__text {
+  font-family: "Open Sans",sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: $font-gray;;
 }
