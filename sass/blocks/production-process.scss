@@ -1,0 +1,44 @@
+.production-process {
+  padding: 35px 0 0;
+  color: $font-black;
+  border: 1px solid blue;
+}
+
+.production-process__wrapper {
+  width: 260px;
+  margin: auto;
+  padding: 0 20px;
+  border: 1px solid red;
+}
+
+.production-process__product {
+  margin: 0 0 30px 0;
+  border: 1px solid #ececec;
+}
+
+.production-process__title {
+  margin: 0;
+  padding: 30px 0px 30px 100px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  background: url(../img/icon-video.svg) 12% 50%no-repeat;
+}
+
+.production-process__video {
+  padding: 0 0 30px;
+}
+
+.production-process__info {
+  padding: 0 30px 0 30px;
+  display: block;
+  font-family: "Open sans", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: $font-gray;
+}
+
+.production-process__order {
+  padding: 30px 0 30px 30px;
+  display: block;
+}
