@@ -6,10 +6,10 @@
 
 .second-nav__item {
   &--bulb {
-    background: $mint-color url('../img/icon-interior.svg') 90% 50% no-repeat;
+    background: $mint-color url("../img/icon-interior.svg") 90% 50% no-repeat;
   }
   &--detail {
-    background:$dark-mint-color url('../img/icon-toy.svg') 90% 50% no-repeat;
+    background: $dark-mint-color url("../img/icon-toy.svg") 90% 50% no-repeat;
   }
 }
 
@@ -22,9 +22,8 @@
 }
 
 .second-nav__text {
-  font-family: "Open sans", sans-serif;
   font-size: 19px;
   line-height:24px;
   font-weight: bold;
-  color: #fff;
+  color: $white;
 }

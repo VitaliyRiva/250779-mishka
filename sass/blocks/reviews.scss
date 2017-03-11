@@ -1,7 +1,5 @@
 .reviews {
   border: 1px solid blue;
-  background-color: #fff;
-  color: $font-black;
   padding-bottom: 45px;
 }
 
@@ -15,7 +13,6 @@
 .reviews__title {
   margin: 0;
   padding: 35px 0 35px;
-  font-family: "Open Sans",sans-serif;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
@@ -24,12 +21,14 @@
 .reviews blockquote {
   padding: 0;
   margin: 0;
+  font-size: 15px;
+  line-height: 30px;
+  color: $dark-gray;
 }
 
 .reviews__author {
   display: block;
   padding: 35px 0 0;
-  font-family: "Open Sans",sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
@@ -37,8 +36,7 @@
 }
 
 .reviews__author-link {
-  font-family: "Open Sans",sans-serif;
   font-size: 17px;
   line-height: 30px;
-  color: $font-gray;
+  color: $dark-gray;
 }

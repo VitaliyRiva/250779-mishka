@@ -1,6 +1,4 @@
 .main-nav {
-  background: #fff;
-  color: $font-black;
   border: 1px solid blue;
 }
 
@@ -19,17 +17,16 @@
 }
 
 .main-nav__item {
-  border: 1px solid #ececec;
+  border: 1px solid $gray;
 }
 
 .main-nav__item a {
   display: block;
   padding: 31px 0 31px;
-  font-family: "Open sans", sans-serif;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
-  color: #000000;
+  color: $black;
   text-align: center;
   text-decoration: none
 }

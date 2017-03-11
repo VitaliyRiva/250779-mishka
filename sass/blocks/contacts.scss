@@ -1,7 +1,6 @@
 .contacts {
   border: 1px solid blue;
-  background-color: #fff;
-  color: $font-gray;
+  color: $dark-gray;
 }
 
 .contacts__wrapper {
@@ -12,11 +11,10 @@
 }
 
 .contacts__title {
-  font-family: "Open Sans",sans-serif;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
-  color: $font-black;
+  color: $black;
 }
 
 .contacts__info {

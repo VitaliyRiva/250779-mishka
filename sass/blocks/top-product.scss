@@ -1,7 +1,6 @@
 .top-product {
   border: 1px solid blue;
-  background: #fff;
-  color:$font-gray;
+  color: $dark-gray;
   padding: 35px 0 0;
 }
 
@@ -13,15 +12,13 @@
 }
 
 .top-product__title {
-  font-family: "Open Sans",sans-serif;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
-  color: $font-black;
+  color: $black;
 }
 
 .top-product__note {
-  font-family: "Open Sans",sans-serif;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
@@ -29,8 +26,7 @@
 }
 
 .top-product__text {
-  font-family: "Open Sans",sans-serif;
   font-size: 15px;
   line-height: 24px;
-  color: $font-gray;;
+  color: $dark-gray;
 }

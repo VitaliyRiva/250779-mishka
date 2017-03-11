@@ -1,7 +1,5 @@
 .about {
   border: 1px solid blue;
-  background-color: #fff;
-  color: $font-black;
   padding: 34px 0 45px;
 }
 
@@ -15,7 +13,6 @@
 .about__title {
   margin: 0;
   padding: 35px 0 0;
-  font-family: "Open Sans",sans-serif;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
@@ -28,7 +25,6 @@
 }
 
 .about__item {
-  font-family: "Open Sans",sans-serif;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
