@@ -22,11 +22,47 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
-  color: $mint-color;
+  color: $mint;
 }
 
 .top-product__text {
   font-size: 15px;
   line-height: 24px;
   color: $dark-gray;
+}
+
+.top-product__table {
+  width: 100%
+}
+
+.top-product__table td {
+  border-bottom: 1px solid $gray;
+  padding: 10px 20px 10px 0;
+}
+
+.top-product__photo {
+  padding-top: 30px;
+}
+
+.top-product__price {
+  display: block;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0 0;
+  color: $dark-gray;
+}
+
+.top-product__order {
+    display: block;
+    border: 2px solid $dark-gray;
+    padding: 10px 0 10px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+    color: $dark-gray;
 }

@@ -29,7 +29,7 @@
   line-height: 16px;
   font-weight: bold;
   text-transform: uppercase;
-  color: $mint-color;
+  color: $mint;
 }
 
 .form-order__user-info {
@@ -55,4 +55,9 @@
   font-size: 14px;
   line-height: 16px;
   color: $dark-gray;
+}
+
+.form-order__btn {
+  width: 100%;
+  margin: 15px 0 15px;
 }

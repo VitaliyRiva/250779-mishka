@@ -6,17 +6,17 @@
 
 .second-nav__item {
   &--bulb {
-    background: $mint-color url("../img/icon-interior.svg") 90% 50% no-repeat;
+    background: $mint url("../img/icon-interior.svg") 90% 50% no-repeat;
   }
   &--detail {
-    background: $dark-mint-color url("../img/icon-toy.svg") 90% 50% no-repeat;
+    background: $dark-mint url("../img/icon-toy.svg") 90% 50% no-repeat;
   }
 }
 
 .second-nav__item a {
   display: inline-block;
-  padding-top:31px;
-  padding-bottom:31px;
+  padding-top: 23px;
+  padding-bottom: 31px;
   padding-left: 30px;
   text-decoration: none;
 }
