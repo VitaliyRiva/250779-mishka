@@ -1,0 +1,32 @@
+.main-nav {
+  border: 1px solid blue;
+}
+
+.main-nav__wrapper {
+  width: 260px;
+  margin: auto;
+  padding: 0 20px;
+  border: 1px solid red;
+}
+
+.main-nav__items {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.main-nav__item {
+  border: 1px solid $gray;
+}
+
+.main-nav__item a {
+  display: block;
+  padding: 31px 0 31px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $black;
+  text-align: center;
+  text-decoration: none
+}

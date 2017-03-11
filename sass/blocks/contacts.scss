@@ -1,0 +1,43 @@
+.contacts {
+  border: 1px solid blue;
+  color: $dark-gray;
+}
+
+.contacts__wrapper {
+  width: 260px;
+  margin: auto;
+  padding: 0 20px;
+  border: 1px solid red;
+}
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: $black;
+}
+
+.contacts__info {
+  line-height: 30px;
+  display: inline-block;
+}
+
+.contacts__email {
+  padding: 0 10px 0 0;
+}
+
+.contacts__address {
+  padding: 0 10px 0 0;
+  vertical-align: top;
+}
+
+.contacts__address-location {
+  line-height: 30px;
+  display: inline-block;
+  width: 180px;
+}
+
+.contacts__map {
+  margin-top: 30px;
+  overflow: hidden;
+}

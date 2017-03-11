@@ -1,0 +1,24 @@
+//normalize
+@import "normalize.scss";
+// Глобал
+@import "global/fonts.scss";
+// Переменные
+@import "variables.scss";
+// Блоки
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/second-nav.scss";
+@import "blocks/top-product.scss";
+@import "blocks/about.scss";
+@import "blocks/reviews.scss";
+@import "blocks/reviews-controls.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social-links.scss";
+@import "blocks/modal-basket.scss";
+@import "blocks/content-catalog.scss";
+@import "blocks/catalog-product.scss";
+@import "blocks/production-process.scss";
+@import "blocks/form-order.scss";
+@import "blocks/button.scss";
