@@ -1,5 +1,7 @@
 //normalize
 @import "normalize.scss";
+// Глобал
+@import "global/fonts.scss";
 // Переменные
 @import "variables.scss";
 // Блоки
@@ -19,6 +21,3 @@
 @import "blocks/catalog-product.scss";
 @import "blocks/production-process.scss";
 @import "blocks/form-order.scss";
-
-// Глобал
-@import "global/fonts.scss";
