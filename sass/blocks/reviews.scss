@@ -1,0 +1,42 @@
+.reviews {
+  border: 1px solid blue;
+  padding-bottom: 45px;
+}
+
+.reviews__wrapper {
+  width: 260px;
+  margin: auto;
+  padding: 0 20px;
+  border: 1px solid red;
+}
+
+.reviews__title {
+  margin: 0;
+  padding: 35px 0 35px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.reviews blockquote {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  line-height: 30px;
+  color: $dark-gray;
+}
+
+.reviews__author {
+  display: block;
+  padding: 35px 0 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.reviews__author-link {
+  font-size: 17px;
+  line-height: 30px;
+  color: $dark-gray;
+}

@@ -1,0 +1,32 @@
+.about {
+  border: 1px solid blue;
+  padding: 34px 0 45px;
+}
+
+.about__wrapper {
+  width: 260px;
+  margin: auto;
+  padding: 0 20px;
+  border: 1px solid red;
+}
+
+.about__title {
+  margin: 0;
+  padding: 35px 0 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.about__items {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.about__item {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  padding: 60px 0 0;
+}

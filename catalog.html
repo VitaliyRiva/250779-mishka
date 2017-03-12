@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
     <header class="page-header">
       <h1 class="visually-hidden">Магазин Мишка</h1>
       <div class="page-header__logo">
         <a href="index.html" class="page-header__link">
-          <img src="http://placehold.it/150x100" width="86" height="35" alt="Магазин-Мишка">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин-Мишка">
         </a>
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -18,7 +19,7 @@
           <ul class="main-nav__items">
             <li class="main-nav__item main-nav__item--active"><a href="index.html">Главная</a></li>
             <li class="main-nav__item "><a href="catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+            <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
             <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
             <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
           </ul>
@@ -32,7 +33,7 @@
       <div class="content-catalog__wrapper">
         <div class="catalog-product">
           <div class="catalog-product__photo">
-            <img src="http://placehold.it/150x100" width="260" height="195"  alt="Товар">
+            <img src="img/photo-1-mobile@1x.jpg" width="260" height="195"  alt="Товар">
           </div>
           <div class="catalog-product__descr">
             <p class="catalog-product__title">Зайчик-попрыгайчик</p>
@@ -40,12 +41,12 @@
           </div>
           <div class="catalog-product__buy">
             <span class="catalog-product__price">1 200 руб.</span>
-            <a href="#" class="catalog-product__order button">Сделать заказ</a>
+            <a href="#" class="catalog-product__order"></a>
           </div>
         </div>
         <div class="catalog-product">
           <div class="catalog-product__photo">
-            <img src="http://placehold.it/150x100" width="260" height="195"  alt="Товар">
+            <img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Товар">
           </div>
           <div class="catalog-product__descr">
             <p class="catalog-product__title">Корзинка для белья</p>
@@ -53,12 +54,12 @@
           </div>
           <div class="catalog-product__buy">
             <span class="catalog-product__price">690 руб.</span>
-            <a href="#" class="catalog-product__order button">Сделать заказ</a>
+            <a href="#" class="catalog-product__order"></a>
           </div>
         </div>
         <div class="catalog-product">
           <div class="catalog-product__photo">
-            <img src="http://placehold.it/150x100" width="260" height="195"  alt="Товар">
+            <img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Товар">
           </div>
           <div class="catalog-product__descr">
             <p class="catalog-product__title">Большая корзинка для игрушек</p>
@@ -66,20 +67,23 @@
           </div>
           <div class="catalog-product__buy">
             <span class="catalog-product__price">1 500 руб.</span>
-            <a href="#" class="catalog-product__order button">Сделать заказ</a>
+            <a href="#" class="catalog-product__order"></a>
           </div>
         </div>
       </div>
     </div>
       <div class="production-process">
         <div class="production-process__wrapper">
-          <p class="production-process__title">Процесс производства</p>
-          <div class="production-process__video">
-            <img src="http://placehold.it/150x100" width="260" height="195"  alt="Товар">
-            <a href="#" class="production-process__video-button"></a>
+          <div class="production-process__product">
+            <p class="production-process__title">Процесс производства</p>
+            <div class="production-process__video">
+              <img src="img/video-mobile@1x.jpg" width="260" height="195" alt="Товар">
+              <a href="#" class="production-process__video-button"></a>
+            </div>
+            <span class="production-process__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+            <a href="#" class="production-process__order button">Сделать заказ</a>
+            </span>
           </div>
-          <span class="production-process__info">По просьбам наших любимых фолловеров мы сняли для вас подробное</span>
-          <a href="#" class="production-process__order button">Сделать заказ</a>
         </div>
       </div>
     <footer class="page-footer">
@@ -90,7 +94,7 @@
             <a href="https://twitter.com/htmlacademy" class="social-link social-link--tw">Мы в Твиттере</a>
           </div>
           <p class="page-footer__copyright">Разработано:
-            <a class="page-footer__copyright-link button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </p>
         </div>
     </footer>
