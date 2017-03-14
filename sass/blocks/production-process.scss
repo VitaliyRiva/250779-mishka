@@ -1,13 +1,10 @@
 .production-process {
   padding: 35px 0 0;
-  border: 1px solid blue;
 }
 
 .production-process__wrapper {
-  width: 260px;
-  margin: auto;
-  padding: 0 20px;
-  border: 1px solid red;
+  width: auto;
+  padding: 0 30px;
 }
 
 .production-process__product {
@@ -34,8 +31,4 @@
   font-size: 13px;
   line-height: 24px;
   color: $dark-gray;
-}
-
-.production-process__order {
-    margin: 30px 0 30px;
 }

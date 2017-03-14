@@ -1,18 +1,12 @@
 .page-header {
-  border: 1px solid blue;
+  background: $light-gray;
+  &--bg {
+    background: $gray;
+  }
 }
 
 .page-header__wrapper {
-  border: 1px solid blue;
-  width: 260px;
-  margin: 0 auto;
-  padding: 0 20px
-}
-
-.page-header__logo {
-  padding: 22px 0 22px;
-  text-align: center;
-  border-bottom: 1px solid $gray;
+  width: auto;
 }
 
 .page-header__title-img {

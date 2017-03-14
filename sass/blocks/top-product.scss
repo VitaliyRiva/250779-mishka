@@ -1,14 +1,11 @@
 .top-product {
-  border: 1px solid blue;
   color: $dark-gray;
   padding: 35px 0 0;
 }
 
 .top-product__wrapper {
-  width: 260px;
-  margin: auto;
-  padding: 0 20px;
-  border: 1px solid red;
+  width: auto;
+  padding: 0 30px;
 }
 
 .top-product__title {
@@ -54,15 +51,3 @@
   color: $dark-gray;
 }
 
-.top-product__order {
-    display: block;
-    border: 2px solid $dark-gray;
-    padding: 10px 0 10px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 17px;
-    line-height: 20px;
-    font-weight: bold;
-    color: $dark-gray;
-}

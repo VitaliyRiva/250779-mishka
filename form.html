@@ -2,26 +2,38 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
-    <header class="page-header">
+    <header class="page-header page-header--bg">
       <h1 class="visually-hidden">Магазин Мишка</h1>
-      <div class="page-header__logo">
-        <a href="index.html" class="page-header__link">
-          <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин-Мишка">
-        </a>
-      </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">Меню</button>
         <div class="main-nav__wrapper">
+          <div class="main-nav__logo">
+            <a href="index.html" class="page-header__link">
+              <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин-Мишка">
+            </a>
+            <button class="main-nav__toggle" type="button">Меню</button>
+          </div>
+          <!-- Первое меню -->
           <ul class="main-nav__items">
-            <li class="main-nav__item main-nav__item--active"><a href="index.html">Главная</a></li>
+            <!-- <li class="main-nav__item main-nav__item--active"><a href="index.html">Главная</a></li> -->
             <li class="main-nav__item "><a href="catalog.html">Каталог товаров</a></li>
             <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-            <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
-            <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+            <li class="main-nav__item main-nav__item--hidden"><a href="#"><span class="main-nav__delivery">Бесплатная доставка по России</span></a></li>
+          </ul>
+          <!-- Второе меню -->
+          <ul class="main-nav__items-user">
+            <li class="main-nav__item-user"><a class="icon-search">Поиск по сайту</a></li>
+            <li class="main-nav__item-user"><a class="icon-cart">Корзина: пока пуста</a></li>
+          </ul>
+          <!-- Третье меню -->
+          <ul class="main-nav__items-list">
+            <li class="main-nav__item-list main-nav__item-list--hidden"><a class="icon-search">Новое поступление</a></li>
+            <li class="main-nav__item-list main-nav__item-list--hidden"><a class="icon-cart">Распродажа</a></li>
           </ul>
         </div>
       </nav>

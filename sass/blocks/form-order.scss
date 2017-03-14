@@ -1,14 +1,11 @@
 .form-order {
   padding: 35px 0 0;
   color: $black;
-  border: 1px solid blue;
 }
 
 .form-order__wrapper {
-  width: 260px;
-  margin: auto;
-  padding: 0 20px;
-  border: 1px solid red;
+  width: auto;
+  padding: 0 30px;
 }
 
 .form-order__descr {
@@ -57,7 +54,3 @@
   color: $dark-gray;
 }
 
-.form-order__btn {
-  width: 100%;
-  margin: 15px 0 15px;
-}

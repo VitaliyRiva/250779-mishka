@@ -26,18 +26,19 @@
 
 .catalog-product__buy {
   padding: 20px 30px 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .catalog-product__price {
   line-height: 24px;
   font-weight: bold;
   color: $black;
-  padding: 0 100px 0 0;
 }
 
 .catalog-product__order {
   background: url("../img/icon-cart.svg") no-repeat;
   width: 20px;
   height: 19px;
-  display: inline-block;
+  opacity: 0.5;
 }
