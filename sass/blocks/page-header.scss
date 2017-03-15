@@ -1,12 +1,10 @@
 .page-header {
   background: $light-gray;
-  &--bg {
-    background: $gray;
-  }
 }
 
 .page-header__wrapper {
-  width: auto;
+  width: 260px;
+  padding: 0 30px;
 }
 
 .page-header__title-img {
@@ -26,5 +24,20 @@
     &--bg {
       background: $gray;
       padding: 75px 0 78px;
+  }
+}
+
+// Для планшетной версии
+
+@media (min-width: 768px) {
+  .page-header {
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-header__logo {
+    position: absolute;
+    min-height: 89px;
   }
 }

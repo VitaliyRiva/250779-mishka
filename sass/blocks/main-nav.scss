@@ -2,75 +2,60 @@
   background: $white;
 }
 
-.main-nav__wrapper {
-  width: auto;
-}
-
 .main-nav__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 80px;
+  text-align: center;
   background: $white;
-  border-bottom: 1px solid $gray-separate;
-  min-height: 79px;
+  border-bottom: 1px solid $gray;
 }
 
-.main-nav__items, .main-nav__items-user {
+.main-nav__logo img {
+  width: 86px;
+  height:80px;
+}
+
+.main-nav__items {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.main-nav__item, .main-nav__item-user {
+.main-nav__item {
+  display: block;
   border-bottom: 1px solid $gray;
   border-left: none;
   border-right: none;
-}
-
-.main-nav__item {
   &--hidden {
     display: none;
   }
 }
 
-.main-nav__item-list {
-  &--hidden {
-    display: none;
-  }
-}
-
-.main-nav__item a,
-.main-nav__item-user a {
-  display: flex;
-  padding: 31px 0 31px;
+.main-nav__link {
+  width: 260px;
+  display: inline-block;
+  padding: 30px 30px 30px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
-  color: $black;
   text-decoration: none;
-  justify-content: center;
+  text-align: center;
+  color: $black;
 }
 
-.main-nav__delivery {
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: normal;
-  color: $dark-gray;
-}
-
-// 768
+//768
 
 @media (min-width: 768px) {
-  .main-nav__wrapper{
+  .main-nav__wrapper {
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
   }
 }
 
 @media (min-width: 768px) {
   .main-nav__logo {
+    flex-basis: 113px;
     margin-left: 50px;
     border: 0;
   }
@@ -80,115 +65,87 @@
   .main-nav__items {
     display: flex;
     width: 100%;
-    border-top: 1px solid $gray-separate;
-    background-color: $light-gray;
-    justify-content: space-around;
-    order: 3;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: $white;
   }
 }
-
-@media (min-width: 768px) {
-  .main-nav__item a {
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: bold;
-  }
-}
-
 
 @media (min-width: 768px) {
   .main-nav__item {
+
     border: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav__item {
     &--hidden {
-      display:flex;
+      display:none;
     }
   }
 }
 
 @media (min-width: 768px) {
-  .main-nav__toggle {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .main-nav__item-user a {
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: bold;
-  }
-}
-
-@media (min-width: 768px) {
-  .main-nav__items-user {
-    display: flex;
-    margin-left: auto;
-    margin-right: 50px;
-    order: 2;
-  }
-}
-
-@media (min-width: 768px) {
-  .main-nav__item-user {
-    display: flex;
-    border-left: 1px solid $gray;
-  }
-}
-
-@media (min-width: 768px) {
-  .main-nav__item-user .icon-cart {
-    font-size: 17px;
-    padding-left: 50px;
-  }
-}
-
-@media (min-width: 768px) {
-  .main-nav__item-user .icon-search {
-    width: 84px;
-    text-indent: -9999px;
-  }
-}
-
-// 1150
-
-@media (min-width: 1150px) {
-  .main-nav__wrapper {
-    position: relative;
-  }
-}
-
-@media (min-width: 1150px) {
-  .main-nav__logo {
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    margin:0;
-  }
-}
-
-@media (min-width: 1150px) {
-  .main-nav__items-list {
-    display: flex;
-    align-items: center;
-    margin-left: 50px;
-    margin-right: auto;
-    text-decoration: none;
-    list-style: none;
-  }
-}
-
-
-@media (min-width: 1150px) {
-  .main-nav__item-list {
-    display: flex;
-  }
-}
-
-@media (min-width: 1150px) {
-  .main-nav__item-list a {
-    font-size: 17px;
+  .main-nav__link {
+    width: auto;
+    padding: 25px 36px 25px;
+    font-size: 15px;
     line-height: 24px;
     font-weight: bold;
+    text-decoration: none;
     color: $black;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav__link {
+    &--delivery {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: normal;
+    color: $dark-gray;
+    }
+    &--basket {
+      font-size: 17px;
+      color: $black;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav__item {
+    &--catalog {
+    order: 1;
+    background: $light-gray;
+    flex-grow: 1;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav__item {
+    &--knitwork {
+    order:1;
+    background: $light-gray;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav__item {
+    &--free-delivery {
+    display: block;
+    order:4;
+    background: $light-gray;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav__item {
+    &--search {
+    margin: 0 auto;
+    }
   }
 }
