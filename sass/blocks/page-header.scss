@@ -27,3 +27,13 @@
       padding: 75px 0 78px;
   }
 }
+
+// Планшетная версия
+
+@media (min-width: 768px) {
+  .page-header__wrapper {
+    width: 668px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+}
