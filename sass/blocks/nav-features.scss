@@ -47,6 +47,7 @@
 
 @media (min-width: 768px) {
   .nav-features__item {
+    border: none;
     &--catalog {
       padding-right: 37px;
     }
@@ -59,7 +60,7 @@
       z-index: 1;
     }
     &--delivery {
-      display: block
+      display: block;
       margin-left:auto;
     }
   }
@@ -77,7 +78,7 @@
       font-size: 0;
       border-left: 1px solid $gray;
       border-right: 1px solid $gray;
-      margin-left:auto;
+      margin-left: auto;
     }
     &--basket {
       padding-right: 0;

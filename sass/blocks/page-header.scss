@@ -1,11 +1,27 @@
-// .page-header {
-//   background: $light-gray;
-// }
+ .page-header__container {
+    background: $light-gray;
+}
+
+.page-header__container {
+    &--bg {
+      background: $gray;
+      padding: 75px 0 78px;
+  }
+}
 
 .page-header__wrapper {
   width: 260px;
   padding: 0 30px;
-  background: $light-gray;
+  margin: 0 auto;
+}
+
+.page-header__title {
+  font-size: 27px;
+  line-height:30px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  padding: 75px 0 0;
 }
 
 .page-header__title-img {
@@ -14,26 +30,62 @@
   min-height: 287px;
 }
 
-.page-header__title {
-  font-size: 27px;
-  line-height:30px;
-  font-weight: bold;
-  text-align: center;
-  width: 260px;
-  margin: 0 auto;
-  padding: 75px 0 0;
-    &--bg {
-      background: $gray;
-      padding: 75px 0 78px;
-  }
-}
 
 // Планшетная версия
+
+@media (min-width: 768px) {
+  .page-header__container {
+    border-top: 1px solid $gray;
+    margin-top: -87px;
+  }
+}
 
 @media (min-width: 768px) {
   .page-header__wrapper {
     width: 668px;
     padding: 0 50px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-header__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+
+// Для десктопа
+@media (min-width: 1150px) {
+  .page-header__wrapper {
+    width: 1050px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1150px) {
+  .page-header__container {
+    border-top: 1px solid $gray;
+    margin-top: -87px;
   }
 }

@@ -1,5 +1,8 @@
 .top-product {
   color: $dark-gray;
+}
+
+.top-product__container {
   padding: 35px 0 0;
 }
 
@@ -25,16 +28,11 @@
 .top-product__text {
   font-size: 15px;
   line-height: 24px;
-  color: $dark-gray;
-}
-
-.top-product__table {
-  width: 100%
 }
 
 .top-product__table td {
   border-bottom: 1px solid $gray;
-  padding: 10px 20px 10px 0;
+  padding: 10px 28px 10px 0;
 }
 
 .top-product__photo {
@@ -49,4 +47,38 @@
   text-align: center;
   padding: 15px 0 0;
   color: $dark-gray;
+}
+
+
+// Для планшета
+
+@media (min-width: 768px) {
+  .top-product__wrapper {
+    width: 668px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .top-product__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .top-product__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .top-product__note {
+    width: 80px;
+    line-height: 17px;
+    align-self: center;
+    text-align: center;
+  }
 }
