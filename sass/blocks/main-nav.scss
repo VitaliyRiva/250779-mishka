@@ -1,6 +1,6 @@
-.main-nav {
-  background: $white;
-}
+// .main-nav {
+//   background: $white;
+// }
 
 .main-nav__logo {
   height: 80px;
@@ -14,6 +14,10 @@
   height:80px;
 }
 
+.main-nav__wrapper {
+  position: relative;
+}
+
 .main-nav__items {
   padding: 0;
   margin: 0;
@@ -25,15 +29,12 @@
   border-bottom: 1px solid $gray;
   border-left: none;
   border-right: none;
-  &--hidden {
-    display: none;
-  }
+  text-align: center;
 }
 
 .main-nav__link {
-  width: 260px;
   display: inline-block;
-  padding: 30px 30px 30px;
+  padding: 31px 30px 30px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -42,110 +43,150 @@
   color: $black;
 }
 
-//768
+
+// Для планшетной версии
+
+@media (min-width: 768px) {
+  .main-nav {
+    border: 2px solid red;
+    align-self: flex-end;
+    width: 50%;
+  }
+}
 
 @media (min-width: 768px) {
   .main-nav__wrapper {
-    width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 668px;
+    padding: 0 50px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 768px) {
   .main-nav__logo {
-    flex-basis: 113px;
-    margin-left: 50px;
-    border: 0;
+    position: absolute;
+    min-height: 89px;
+    background: none;
+    left: 50px;
+    border: none;
   }
 }
 
 @media (min-width: 768px) {
   .main-nav__items {
     display: flex;
-    width: 100%;
-    flex-direction: row;
     flex-wrap: wrap;
-    background: $white;
   }
 }
 
 @media (min-width: 768px) {
   .main-nav__item {
-
-    border: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .main-nav__item {
-    &--hidden {
-      display:none;
+    border:none;
+      &--new-arriv {
+        display: none;
+      }
+      &--sale {
+       display: none;
     }
   }
 }
 
 @media (min-width: 768px) {
   .main-nav__link {
-    width: auto;
-    padding: 25px 36px 25px;
-    font-size: 15px;
-    line-height: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    color: $black;
-  }
-}
-
-@media (min-width: 768px) {
-  .main-nav__link {
-    &--delivery {
-    font-size: 15px;
-    line-height: 24px;
-    font-weight: normal;
-    color: $dark-gray;
-    }
-    &--basket {
-      font-size: 17px;
-      color: $black;
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  .main-nav__item {
-    &--catalog {
-    order: 1;
-    background: $light-gray;
-    flex-grow: 1;
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  .main-nav__item {
     &--knitwork {
-    order:1;
-    background: $light-gray;
+      font-size:15px;
+      padding: 30px 0px 33px 0px
+    }
+    &--catalog {
+      font-size:15px;
+      padding: 30px 30px 33px 0px;
     }
   }
 }
 
-@media (min-width: 768px) {
-  .main-nav__item {
-    &--free-delivery {
-    display: block;
-    order:4;
-    background: $light-gray;
-    }
+
+//Для десктопной версии
+
+@media (min-width: 1150px) {
+  .main-nav {
+    border: 2px solid red;
+    align-self: flex-start;
+    width: 50%;
   }
 }
 
-@media (min-width: 768px) {
-  .main-nav__item {
-    &--search {
+@media (min-width: 1150px) {
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1050px;
+    padding: 0 50px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-nav__logo {
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-nav__items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 390px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-nav__item {
+    border:none;
+      &--catalog {
+        border-right: 1px solid $gray;
+        z-index: 1;
+      }
+      &--knitwork {
+        z-index: 1;
+    }
+      &--new-arriv {
+        display: block;
+      }
+      &--sale {
+        display: block;
     }
   }
 }
+
+
+@media (min-width: 1150px) {
+  .main-nav__link {
+    border:none;
+      &--new {
+        padding-right: 40px;
+        padding-left: 0;
+        font-size:15px;
+      }
+      &--sale {
+        padding-left: 0;
+        font-size:15px;
+      }
+      &--catalog {
+        font-size: 17px;
+      }
+      &--knitwork {
+        font-size: 17px;
+        padding: 30px 0px 30px 15px;
+      }
+      &--sale {
+        font-size:15px;
+    }
+  }
+}
+
