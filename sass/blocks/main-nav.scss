@@ -30,6 +30,12 @@
   border-left: none;
   border-right: none;
   text-align: center;
+  &--new-arriv {
+    display: none;
+  }
+  &--sale {
+    display: none;
+  }
 }
 
 .main-nav__link {
@@ -189,4 +195,3 @@
     }
   }
 }
-
