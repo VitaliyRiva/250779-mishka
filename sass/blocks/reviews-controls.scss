@@ -1,0 +1,22 @@
+
+
+//Для планшета
+
+@media (min-width: 768px) {
+  .reviews-controls {
+    width: 175px;
+    position: absolute;
+    right: 52px;
+    bottom: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .reviews-controls__next,
+  .reviews-controls__prev {
+    min-width: 48%;
+    min-height: 50px;
+    border: 1px solid red;
+    background: none;
+  }
+}

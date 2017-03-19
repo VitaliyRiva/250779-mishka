@@ -1,10 +1,19 @@
 .social-links {
-  display: inline-block;
-  vertical-align: top;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
   border-bottom: 1px solid $gray-separate;
 }
 
-.social-links .social-link {
-  display: inline-block;
-  padding: 30px 0;
+.social-link {
+  width: 28px;
+  height: 28px;
+  font-size: 0;
+  background: black;
+}
+
+@media (min-width: 768px) {
+  .social-links {
+    width: 146px;
+  }
 }

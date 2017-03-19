@@ -5,6 +5,7 @@
 .reviews__wrapper {
   width: 260px;
   padding: 0 30px;
+  margin: 0 auto;
 }
 
 .reviews__title {
@@ -37,3 +38,61 @@
   line-height: 30px;
   color: $dark-gray;
 }
+
+//Планшетная версия
+
+@media (min-width: 768px) {
+  .reviews__wrapper {
+    width: 668px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 50px;
+    background: url(../img/review@1x.jpg) 0% 50% no-repeat;
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) {
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+    order: -2;
+  }
+}
+
+@media (min-width: 768px) {
+.reviews blockquote {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 768px) {
+.reviews__author {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 768px) {
+  .reviews__write.button {
+    width: 175px;
+    order: -1;
+    margin-left: auto;
+  }
+}
+
+//Для десктопной версии
+
+@media (min-width: 1150px) {
+  .reviews__wrapper {
+    width: 1050px;
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .reviews blockquote {
+    width: 929px;
+  }
+}
+

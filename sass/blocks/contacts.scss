@@ -5,6 +5,7 @@
 .contacts__wrapper {
   width: 260px;
   padding: 0 30px;
+  margin: 0 auto;
 }
 
 .contacts__title {
@@ -14,27 +15,145 @@
   color: $black;
 }
 
-.contacts__info {
+.contacts__container-info {
   line-height: 30px;
-  display: inline-block;
 }
 
-.contacts__email {
-  padding: 0 10px 0 0;
+.contacts__email a {
+  text-decoration: none;
+  color: $dark-gray;
+  border-bottom: 1px solid $mint;
 }
 
 .contacts__address {
-  padding: 0 10px 0 0;
-  vertical-align: top;
+  display: flex;
 }
 
-.contacts__address-location {
-  line-height: 30px;
-  display: inline-block;
-  width: 180px;
+.contacts__email span,
+.contacts__address span {
+  padding-right: 20px;
+}
+
+.contacts__address span:last-child {
+  padding: 0;
+}
+
+.contacts__btn-container {
+    text-align: center;
 }
 
 .contacts__map {
   margin-top: 30px;
-  overflow: hidden;
+}
+
+.contacts__map img {
+  width: 100%;
+}
+
+
+//Планшетная версия
+
+@media (min-width: 768px) {
+  .contacts__wrapper {
+    width: 668px;
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts__container-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts__address {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts__btn-container {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts__map img {
+    width: 100%;
+  }
+}
+
+// Для десктопнйо версии
+
+@media (min-width: 1150px) {
+  .contacts {
+    width: 1050px;
+    padding: 0 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1150px) {
+  .contacts__wrapper {
+    width:50%;
+    padding: 0;
+    margin:0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .contacts__container-data {
+    width: 300px;
+    margin-left: auto;
+    margin-right: 50px;
+  }
+}
+
+
+@media (min-width: 1150px) {
+  .contacts__address {
+    width: auto;
+  }
+}
+
+@media (min-width: 1150px) {
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .contacts__map {
+    width: 525px;
+    height: 457px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .contacts__btn-container {
+    margin-top: -44px;
+    margin-left: 200px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .contacts__btn.button {
+    margin-top: 0;
+  }
 }

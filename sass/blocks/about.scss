@@ -5,6 +5,7 @@
 .about__wrapper {
   width: 260px;
   padding: 0 30px;
+  margin: 0 auto;
 }
 
 .about__title {
@@ -26,4 +27,52 @@
   line-height: 20px;
   font-weight: bold;
   padding: 60px 0 0;
+}
+
+// Планшетная версия
+
+@media (min-width: 768px) {
+  .about__wrapper {
+    width: 668px;
+    padding:0 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about__items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .about__item {
+    width: 50%;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+//Десктопная версия
+
+@media (min-width: 1150px) {
+  .about__wrapper {
+    width: 1050px;
+    padding: 0 50px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
