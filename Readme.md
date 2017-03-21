@@ -1,7 +1,7 @@
 ﻿# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Виталий Булычев](https://up.htmlacademy.ru/adaptive/10/user/250779).
-* Наставник: [Юлия Плонина](https://htmlacademy.ru/profile/id64655).
+* Наставник: [Алексей Белов](https://htmlacademy.ru/profile/id96038).
 
 ---
 
