@@ -1,5 +1,5 @@
 .about {
-  padding: 34px 0 45px;
+  padding: 34px 0 0 0;
 }
 
 .about__wrapper {
@@ -26,10 +26,23 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
-  padding: 60px 0 0;
+  padding: 86px 0 0;
+}
+
+.about__item:last-child {
+  padding-bottom:0;
 }
 
 // Планшетная версия
+
+
+@media (min-width: 768px) {
+  .about {
+    margin-top: 86px;
+    padding: 0;
+  }
+}
+
 
 @media (min-width: 768px) {
   .about__wrapper {
@@ -50,6 +63,7 @@
     width: 50%;
     font-size: 20px;
     line-height: 22px;
+    padding: 108px 0 0;
   }
 }
 
@@ -63,16 +77,30 @@
 //Десктопная версия
 
 @media (min-width: 1150px) {
+  .about {
+    margin-top: 103px;
+  }
+}
+
+@media (min-width: 1150px) {
   .about__wrapper {
     width: 1050px;
     padding: 0 50px;
   }
 }
 
-
-@media (min-width: 768px) {
+@media (min-width: 1150px) {
   .about__title {
+    padding-left: 175px;
     font-size: 53px;
     line-height: 57px;
   }
 }
+
+@media (min-width: 1150px) {
+  .about__items {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+

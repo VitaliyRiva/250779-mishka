@@ -30,7 +30,7 @@
 
 @media (min-width: 768px) {
   .nav-features {
-    width: 50%;
+    width: 59%;
     border: 2px solid red;
   }
 }
@@ -73,8 +73,11 @@
       font-weight: normal;
       color: $dark-gray;
       padding-right: 0;
+      padding-bottom: 18px;
+      padding-top: 18px;
     }
     &--search {
+      width: 20px;
       font-size: 0;
       border-left: 1px solid $gray;
       border-right: 1px solid $gray;
@@ -112,6 +115,7 @@
 
 @media (min-width: 1150px) {
   .nav-features__item {
+    min-height: 73px;
     &--search {
       z-index: 1;
     }
@@ -120,6 +124,7 @@
       z-index: 1;
     }
     &--delivery {
+      min-height: 73px;
       margin-left:auto;
     }
   }

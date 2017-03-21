@@ -3,7 +3,8 @@
 }
 
 .top-product__header {
-  padding: 35px 0 0;
+  margin-top: 60px;
+  padding-bottom: 11px;
 }
 
 .top-product__wrapper {
@@ -24,6 +25,11 @@
   line-height: 20px;
   font-weight: bold;
   color: $mint;
+}
+
+.top-product__descr {
+  display: flex;
+  flex-direction: column;
 }
 
 .top-product__text {
@@ -50,6 +56,15 @@
   color: $dark-gray;
 }
 
+.top-product__price-container {
+  order: 1;
+}
+
+.top-product__order.button {
+  margin-top: 31px;
+  margin-bottom: 0;
+  padding: 13px 0 13px 0;
+}
 
 // Для планшета
 
@@ -64,7 +79,9 @@
   .top-product__header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-top: 44px;
+    margin-bottom: 48px;
+    padding: 0;
   }
 }
 
@@ -77,45 +94,43 @@
 
 @media (min-width: 768px) {
   .top-product__note {
-    width: 80px;
+    width: 127px;
     line-height: 17px;
     align-self: center;
     text-align: center;
+    text-transform: uppercase;
   }
 }
 
 @media (min-width: 768px) {
   .top-product__descr {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
-  }
-}
-
-@media (min-width: 768px) {
-  .top-product__descr-container {
-    width: 290px;
+    height: 408px;
   }
 }
 
 @media (min-width: 768px) {
   .top-product__text {
+    width: 290px;
     font-size: 17px;
     line-height: 30px;
     margin-top: 0;
-    margin-bottom: 33px;
   }
 }
 
 @media (min-width: 768px) {
   .top-product__table {
-    width: 100%;
+    width: auto;
   }
 }
 
 @media (min-width: 768px) {
   .top-product__price-container {
     width: 290px;
-    margin-top: -108px;
+    order: 0;
   }
 }
 
@@ -136,6 +151,7 @@
 
 @media (min-width: 768px) {
   .top-product__photo {
+    margin-left: auto;
     padding: 0;
   }
 }
@@ -150,53 +166,137 @@
 //Для десктопа
 
 @media (min-width: 1150px) {
+  .top-product {
+    margin-top: 126px;
+  }
+}
+
+@media (min-width: 1150px) {
   .top-product__wrapper {
     width: 1050px;
   }
 }
 
 @media (min-width: 1150px) {
-  .top-product__header {
+  .top-product__descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 493px;
+    padding-left: 175px;
     position: relative;
-    top: 110px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .top-product__header {
     flex-direction: row-reverse;
     justify-content: flex-end;
   }
 }
 
-
 @media (min-width: 1150px) {
   .top-product__title {
     font-size: 53px;
     line-height: 57px;
+    z-index: 1;
   }
 }
 
 @media (min-width: 1150px) {
   .top-product__note {
-    line-height: 30px;
-    margin-right: 92px;
+    width: 130px;
+    line-height: 17px;
+    margin-right: 24px;
+    margin-left: 17px;
+  }
+}
+
+
+@media (min-width: 1150px) {
+  .top-product__text {
+    width: 300px;
   }
 }
 
 @media (min-width: 1150px) {
-  .top-product__descr-container {
-    margin-top: 99px;
-    margin-left: auto;
-    margin-right: 60px;
+  .top-product__table {
+    width: 300px;
   }
 }
 
 @media (min-width: 1150px) {
   .top-product__price-container {
-    margin-left: 175px;
+    padding-top: 0px;
+    margin-top: 81px;
   }
 }
 
 @media (min-width: 1150px) {
-  .top-product__photo img {
-    width: 525px;
-    height:639px;
-    margin-top: -81px;
+  .top-product__order.button {
+    width: 286px;
+    padding: 16px 2px 14px 0px;
+    margin-top: 35px;
+    margin-bottom: 16px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
+
+
+@media (min-width: 1150px) {
+  .top-product__photo {
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+    top: -162px;
+  }
+}
+
+
+@media (min-width: 1150px) {
+  .top-product__photo img {
+    width: 525px;
+    height: 639px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media (min-width: 1150px) {
+//   .top-product__descr-container {
+//     margin-top: 99px;
+//     margin-left: auto;
+//     margin-right: 60px;
+//   }
+// }
+
+// @media (min-width: 1150px) {
+//   .top-product__price-container {
+//     margin-left: 175px;
+//   }
+// }
+
+// @media (min-width: 1150px) {
+//   .top-product__photo img {
+//     width: 525px;
+//     height:639px;
+//     margin-top: -81px;
+//   }
+// }

@@ -30,13 +30,12 @@
   min-height: 287px;
 }
 
-
 // Планшетная версия
 
 @media (min-width: 768px) {
   .page-header__container {
     border-top: 1px solid $gray;
-    margin-top: -87px;
+    margin-top: -61px;
   }
 }
 
@@ -52,9 +51,19 @@
   .page-header__title {
     font-size: 43px;
     line-height: 50px;
+    padding: 152px 0 0;
   }
 }
 
+@media (min-width: 768px) {
+  .page-header__title-img {
+    background: $light-gray url("../img/hero-mobile@1x.jpg") 50% 0 no-repeat;
+    width: auto;
+    min-height: 287px;
+    background-size: cover;
+    padding-bottom: 338px;
+  }
+}
 
 // Для десктопа
 @media (min-width: 1150px) {
@@ -65,27 +74,17 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 1150px) {
   .page-header__container {
     border-top: 1px solid $gray;
-    margin-top: -87px;
+    margin-top: -75px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-header__title {
+    width: 630px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }

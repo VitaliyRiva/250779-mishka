@@ -17,6 +17,7 @@
           </a>
         </div>
         <nav class="main-nav main-nav--closed main-nav--nojs">
+          <!-- <div class="main-nav__toggle" >Открыть меню</div> -->
           <ul class="main-nav__items">
             <li class="main-nav__item main-nav__item--catalog">
               <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
@@ -69,32 +70,30 @@
           <span class="top-product__note">товар недели</span>
         </div>
         <div class="top-product__descr">
-          <div class="top-product__descr-container">
-            <p class="top-product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-            <table class="top-product__table" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td>Цвет:</td>
-                  <td>«Тиффани»/серый</td>
-                </tr>
-                <tr>
-                  <td>Диаметр:</td>
-                  <td>25 см</td>
-                </tr>
-                <tr>
-                  <td>Высота:</td>
-                  <td>15 см</td>
-                </tr>
-              </tbody>
-            </table>
+          <p class="top-product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <table class="top-product__table" cellspacing="0">
+            <tbody>
+              <tr>
+                <td>Цвет:</td>
+                <td>«Тиффани»/серый</td>
+              </tr>
+              <tr>
+                <td>Диаметр:</td>
+                <td>25 см</td>
+              </tr>
+              <tr>
+                <td>Высота:</td>
+                <td>15 см</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="top-product__price-container">
+            <span class="top-product__price">Цена: 990 руб.</span>
+            <a href="#" class="top-product__order button">Заказать</a>
           </div>
           <div class="top-product__photo">
             <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Продукт">
           </div>
-        </div>
-        <div class="top-product__price-container">
-          <span class="top-product__price">Цена: 990 руб.</span>
-          <a href="#" class="top-product__order button">Заказать</a>
         </div>
       </div>
     </div>
@@ -140,12 +139,12 @@
             </p>
           </div>
         </div>
-      </div>
-      <div class="contacts__map">
-        <img src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта">
-      </div>
-      <div class="contacts__btn-container">
-        <a href="#" class="contacts__btn button">Написать нам</a>
+        <div class="contacts__btn-container">
+          <a href="#" class="contacts__btn button">Написать нам</a>
+        </div>
+        <div class="contacts__map">
+          <img src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта">
+        </div>
       </div>
     </div>
     <footer class="page-footer">
@@ -180,5 +179,22 @@
         </form>
       </div>
     </div>
+
+    <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
   </body>
 </html>
