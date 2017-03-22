@@ -6,7 +6,7 @@
     width: 175px;
     position: absolute;
     right: 52px;
-    bottom: 0px;
+    bottom: 50px;
     margin:0;
   }
 }
@@ -18,5 +18,12 @@
     min-height: 50px;
     border: 1px solid red;
     background: none;
+  }
+}
+// Десктопная версия
+
+@media (min-width: 1150px) {
+  .reviews-controls {
+    bottom: 95px;
   }
 }

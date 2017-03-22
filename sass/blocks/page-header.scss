@@ -25,6 +25,9 @@
   &--catalog {
     padding: 0;
   }
+  &--knitwork {
+    padding: 0;
+  }
 }
 
 .page-header__title-img {
@@ -59,6 +62,9 @@
     line-height: 50px;
     padding: 152px 0 0;
     &--catalog {
+      padding: 24px 0;
+    }
+    &--knitwork {
       padding: 24px 0;
     }
   }

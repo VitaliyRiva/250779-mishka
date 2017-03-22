@@ -72,11 +72,10 @@
   width: 100%;
 }
 
-
 //Планшетная версия
 @media (min-width: 768px) {
   .contacts {
-    margin-top: 112px;
+    margin-top: 63px;
   }
 }
 
@@ -135,7 +134,6 @@
   }
 }
 
-
 @media (min-width: 768px) {
   .contacts__map {
     width: 100%;
@@ -146,7 +144,7 @@
 // Для десктопной версии
 @media (min-width: 1150px) {
   .contacts {
-    margin-top: 185px;
+    margin-top: 91px;
   }
 }
 
