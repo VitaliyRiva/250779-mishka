@@ -1,11 +1,35 @@
 .content-catalog {
-  padding: 35px 0 0;
-  border: 1px solid blue;
+  margin: 25px 0;
 }
 
 .content-catalog__wrapper {
   width: 260px;
-  margin: auto;
-  padding: 0 20px;
-  border: 1px solid red;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+//Для планшета
+@media (min-width: 768px) {
+  .content-catalog {
+    margin: 64px 0 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .content-catalog__wrapper {
+    width: 668px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+}
+
+// Десктопная версия
+@media (min-width: 1150px) {
+  .content-catalog__wrapper {
+    width: 1050px;
+    padding: 0 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between
+  }
 }

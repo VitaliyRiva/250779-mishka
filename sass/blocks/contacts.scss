@@ -1,43 +1,216 @@
 .contacts {
-  border: 1px solid blue;
   color: $dark-gray;
 }
 
 .contacts__wrapper {
   width: 260px;
-  margin: auto;
-  padding: 0 20px;
-  border: 1px solid red;
+  padding: 0 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contacts__container-data {
+  margin-bottom: 20px;
 }
 
 .contacts__title {
+  margin-bottom: 26px;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   color: $black;
 }
 
-.contacts__info {
+.contacts__container-info {
   line-height: 30px;
-  display: inline-block;
 }
 
 .contacts__email {
-  padding: 0 10px 0 0;
+  margin-bottom: 30px;
+}
+
+.contacts__email a {
+  text-decoration: none;
+  color: $dark-gray;
+  border-bottom: 1px solid $mint;
 }
 
 .contacts__address {
-  padding: 0 10px 0 0;
-  vertical-align: top;
+  display: flex;
 }
 
-.contacts__address-location {
-  line-height: 30px;
-  display: inline-block;
-  width: 180px;
+.contacts__email span {
+  padding-right: 26px;
+}
+
+.contacts__address span {
+  padding-right: 31px
+}
+
+.contacts__address span:last-child {
+  padding: 0;
+}
+
+.contacts__btn-container {
+    text-align: center;
+    order: 1;
+}
+
+.contacts__btn.button {
+  margin-top: 36px;
+  padding: 16px 0px 15px 0px;
+  margin-bottom: 36px;
 }
 
 .contacts__map {
   margin-top: 30px;
-  overflow: hidden;
+}
+
+.contacts__map img {
+  width: 100%;
+}
+
+//Планшетная версия
+@media (min-width: 768px) {
+  .contacts {
+    margin-top: 63px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts__wrapper {
+    width: 668px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts__container-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 17px;
+    padding-top: 6px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts__address {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts__address span {
+    padding-right: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts__btn-container {
+    margin: 0 auto;
+    text-align: center;
+    order: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts__btn.button {
+    margin-top: 53px;
+    padding: 13px 0px 11px 0px;
+    width: 225px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts__map {
+    width: 100%;
+    margin-top: 19px;
+  }
+}
+
+// Для десктопной версии
+@media (min-width: 1150px) {
+  .contacts {
+    margin-top: 91px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .contacts__wrapper {
+    width: 1050px;
+    padding: 0 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 465px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .contacts__container-data {
+    width: 300px;
+    padding-left: 175px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 22px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .contacts__email {
+    margin-bottom: 14px;
+  }
+}
+
+
+@media (min-width: 1150px) {
+  .contacts__address {
+    width: auto;
+  }
+}
+
+@media (min-width: 1150px) {
+  .contacts__btn-container {
+    width: 273px;
+    text-align: left;
+    padding-left: 175px;
+    order: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .contacts__map {
+    width: 525px;
+    height: 457px;
+    margin-top: -27px;
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1150px) {
+  .contacts__btn.button {
+    margin: 0px 0 39px;
+  }
 }

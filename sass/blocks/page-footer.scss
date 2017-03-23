@@ -1,11 +1,40 @@
 .page-footer {
-  border: 1px solid blue;
   background: $gray;
 }
 
 .page-footer__wrapper {
   width: 260px;
-  margin: auto;
-  padding: 0 20px;
-  border: 1px solid red;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__copyright {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .page-footer__wrapper {
+    width: 668px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-footer__logo {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-footer__copyright {
+    text-align: center;
+    padding-bottom: 0;
+  }
 }
