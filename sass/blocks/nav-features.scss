@@ -1,0 +1,149 @@
+.nav-features__link {
+  display: inline-block;
+  padding: 31px 30px 31px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: $black;
+}
+
+.nav-features__items {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-features__item {
+  display: block;
+  border-bottom: 1px solid $gray;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+  &--delivery {
+    display: none;
+  }
+}
+
+//Для планшетной версии
+
+@media (min-width: 768px) {
+  .nav-features {
+    width: 59%;
+    border: 2px solid red;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-features__items {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-features__item {
+    border: none;
+    &--catalog {
+      padding-right: 37px;
+    }
+    &--search {
+      margin-left: auto;
+      z-index: 1;
+    }
+    &--basket {
+      margin-left: auto;
+      z-index: 1;
+    }
+    &--delivery {
+      display: block;
+      margin-left:auto;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-features__link {
+    &--delivery {
+      font-size: 15px;
+      font-weight: normal;
+      color: $dark-gray;
+      padding-right: 0;
+      padding-bottom: 18px;
+      padding-top: 18px;
+    }
+    &--search {
+      width: 20px;
+      font-size: 0;
+      border-left: 1px solid $gray;
+      border-right: 1px solid $gray;
+      margin-left: auto;
+    }
+    &--basket {
+      padding-right: 0;
+      padding-left: 80px;
+    }
+  }
+}
+
+
+//Для десктопной версии
+
+@media (min-width: 1150px) {
+  .nav-features {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid red;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .nav-features__items {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+}
+
+@media (min-width: 1150px) {
+  .nav-features__item {
+    min-height: 73px;
+    &--search {
+      z-index: 1;
+    }
+    &--basket {
+      margin: 0;
+      z-index: 1;
+    }
+    &--delivery {
+      min-height: 73px;
+      margin-left:auto;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .nav-features__link {
+    &--delivery {
+      font-size: 15px;
+      font-weight: normal;
+      color: $dark-gray;
+    }
+    &--search {
+      font-size: 0;
+      border-left: 1px solid $gray;
+      border-right: 1px solid $gray;
+    }
+    &--basket {
+      padding-left: 80px;
+    }
+  }
+}

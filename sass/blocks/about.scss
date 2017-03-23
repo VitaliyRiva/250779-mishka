@@ -1,13 +1,11 @@
 .about {
-  border: 1px solid blue;
-  padding: 34px 0 45px;
+  padding: 34px 0 0 0;
 }
 
 .about__wrapper {
   width: 260px;
-  margin: auto;
-  padding: 0 20px;
-  border: 1px solid red;
+  padding: 0 30px;
+  margin: 0 auto;
 }
 
 .about__title {
@@ -28,5 +26,79 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
-  padding: 60px 0 0;
+  padding: 86px 0 0;
+}
+
+.about__item:last-child {
+  padding-bottom:0;
+}
+
+// Планшетная версия
+
+@media (min-width: 768px) {
+  .about {
+    margin-top: 86px;
+    padding: 0;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .about__wrapper {
+    width: 668px;
+    padding:0 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about__items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .about__item {
+    width: 50%;
+    font-size: 20px;
+    line-height: 22px;
+    padding: 108px 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+//Десктопная версия
+
+@media (min-width: 1150px) {
+  .about {
+    margin-top: 103px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .about__wrapper {
+    width: 1050px;
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .about__title {
+    padding-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .about__items {
+    max-width: 700px;
+    margin: 0 auto;
+  }
 }

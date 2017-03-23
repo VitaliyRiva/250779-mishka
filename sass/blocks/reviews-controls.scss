@@ -1,0 +1,29 @@
+
+
+//Для планшета
+@media (min-width: 768px) {
+  .reviews-controls {
+    width: 175px;
+    position: absolute;
+    right: 52px;
+    bottom: 50px;
+    margin:0;
+  }
+}
+
+@media (min-width: 768px) {
+  .reviews-controls__next,
+  .reviews-controls__prev {
+    min-width: 48%;
+    min-height: 50px;
+    border: 1px solid red;
+    background: none;
+  }
+}
+// Десктопная версия
+
+@media (min-width: 1150px) {
+  .reviews-controls {
+    bottom: 95px;
+  }
+}
