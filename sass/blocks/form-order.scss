@@ -397,3 +397,104 @@
     background: url(../img/icon-tick.svg) 50% 50% no-repeat;
   }
 }
+
+// Десктопная версия
+
+@media (min-width: 1150px) {
+  .form-order__descr {
+    width: 668px;
+    padding-left: 51px;
+    margin: 132px 175px 0px 175px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .form-order__subtitle {
+    width: 114px;
+    padding-left: 62px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .form-order__type {
+    width: 1050px;
+    display: flex;
+    align-items: baseline;
+    padding: 30px 50px;
+    &--radio {
+      margin-top: 0px;
+    }
+    &--checkbox {
+      padding-top: 30px;
+      margin: 0 auto;
+      background: $gray;
+    }
+    &--fullname {
+      padding-top: 46px;
+      padding-bottom: 53px;
+      margin: 0 auto;
+    }
+    &--phone {
+      padding-top: 50px;
+      padding-bottom: 0;
+      margin: 0 auto;
+      background: $gray;
+    }
+    &--email {
+      padding-top: 20px;
+      padding-bottom: 48px;
+      margin: 0 auto;
+      background: $gray;
+    }
+    &--extra {
+      padding-top: 30px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+.form-order__items {
+    width: 700px;
+  }
+}
+
+@media (min-width: 1150px) {
+.form-order__radio-label {
+    padding-left: 80px;
+    padding-bottom: 20px;
+    width: 350px;
+  }
+}
+
+@media (min-width: 1150px) {
+.form-order__checkbox-label {
+    width: 100px;
+    padding-left: 80px;
+  }
+}
+
+@media (min-width: 1150px) {
+.form-order__textarea {
+    width: 700px;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+.form-order__recuired-field {
+    margin-right: auto;
+    padding-left: 169px;
+  }
+}
+
+@media (min-width: 1150px) {
+.form-order__btn.button {
+    width: 231px;
+    margin-left: 175px;
+  }
+}
