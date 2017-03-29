@@ -1,21 +1,25 @@
 .second-nav {
+  width: auto;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
 }
 
 .second-nav__item {
   &--bulb {
-    background: $mint url("../img/icon-interior.svg") 90% 50% no-repeat;
+    position: relative;
+    background: $mint;
   }
   &--detail {
-    background: $dark-mint url("../img/icon-toy.svg") 90% 50% no-repeat;
+    position: relative;
+    background: $dark-mint;
   }
 }
 
 .second-nav__link {
+  position: relative;
   display: block;
-  padding: 30px 0 30px 30px;
+  padding: 22px 0 30px 30px;
   font-size: 19px;
   line-height:24px;
   font-weight: bold;
@@ -23,10 +27,26 @@
   text-decoration: none;
 }
 
-// Планшетная версия
+.second-nav-link__icon-bulb {
+  position: absolute;
+  right: 37px;
+  top: 17px;
+  opacity: 0.5;
+}
 
+
+.second-nav-link__icon-detail {
+  position: absolute;
+  right: 26px;
+  top: 17px;
+  opacity: 0.5;
+}
+
+// Планшетная версия
 @media (min-width: 768px) {
   .second-nav {
+    position: relative;
+    width:668px;
     display: flex;
     justify-content: space-between;
   }
@@ -43,9 +63,85 @@
   .second-nav__link {
     font-size: 20px;
     line-height:30px;
-    padding: 45px 0 45px 30px;
+    padding: 32px 0 32px 34px;
   }
 }
 
+@media (min-width: 768px) {
+  .second-nav-link__icon-bulb {
+    right: 37px;
+    top: 34px;
+  }
+}
+
+@media (min-width: 768px) {
+  .second-nav-link__icon-detail {
+    right: 33px;
+    top: 36px;
+  }
+}
+
+@media (min-width: 768px) {
+  .second-nav__item {
+    &--bulb {
+    &::after {
+      right: 36px;
+      top: 34px;
+      }
+    }
+    &--detail {
+      position: relative;
+      background: $dark-mint;
+    &::after {
+      right: 33px;
+      top: 38px;
+      }
+    }
+  }
+}
 
 // Для десктопа
+@media (min-width: 1150px) {
+  .second-nav {
+    width: 1050px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .second-nav__item {
+    &:hover {
+      transform: translateY(-5px);
+    }
+    &--bulb {
+      &:hover svg {
+        opacity:0.3;
+      }
+    }
+    &:active path {
+      opacity: 0.5;
+    }
+    &--detail {
+      &:hover svg {
+        opacity:0.3;
+      }
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .second-nav__link {
+    &:hover {
+      transform: translateY(-5px);
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .second-nav-link__icon-bulb {
+    right: 36px;
+    top: 36px;
+  }
+}

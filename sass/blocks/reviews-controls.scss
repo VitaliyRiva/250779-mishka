@@ -1,6 +1,46 @@
+.reviews-controls {
+  width: 260px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
 
+.reviews-controls__next,
+.reviews-controls__prev {
+  min-width: 50%;
+  min-height: 50px;
+  border: 1px solid $gray;
+  background: none;
+  margin-right: -2px;
+  margin-left: -2px;
+  padding-right: 0;
+  padding-left: 0;
+  cursor: pointer;
+  outline: none;
+}
 
-//Для планшета
+.reviews-controls__next {
+  background: url("../img/icon-right-arrow.svg") no-repeat;
+  background-position: center;
+  &:hover {
+    opacity: 0.5;
+  }
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+.reviews-controls__prev {
+  background: url("../img/icon-left-arrow.svg") no-repeat;
+  background-position: center;
+  &:hover {
+    opacity: 0.5;
+  }
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+//Планшетная версия
 @media (min-width: 768px) {
   .reviews-controls {
     width: 175px;
@@ -8,20 +48,18 @@
     right: 52px;
     bottom: 50px;
     margin:0;
+    border: none;
   }
 }
 
 @media (min-width: 768px) {
   .reviews-controls__next,
   .reviews-controls__prev {
-    min-width: 48%;
-    min-height: 50px;
-    border: 1px solid red;
-    background: none;
+    border: none;
   }
 }
-// Десктопная версия
 
+// Десктопная версия
 @media (min-width: 1150px) {
   .reviews-controls {
     bottom: 95px;

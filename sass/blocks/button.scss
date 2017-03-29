@@ -12,4 +12,13 @@
   font-weight: bold;
   background: $white;
   color: $dark-gray;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    color: $white;
+    background: $dark-gray;
+  }
+  &:active {
+    color: darken($gray, 30%);
+  }
 }

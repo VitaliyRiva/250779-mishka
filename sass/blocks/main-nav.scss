@@ -8,11 +8,18 @@
   background: $white;
   border-bottom: 1px solid $gray;
   z-index: 1;
+  &:hover {
+    opacity: 0.5;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__logo img {
-  width: 86px;
-  height:80px;
+  margin-top: 19px;
+  max-width: 100%;
+  height: auto;
 }
 
 .main-nav__wrapper {
@@ -40,7 +47,7 @@
 }
 
 .main-nav__link {
-  display: inline-block;
+  display: block;
   padding: 31px 30px 30px;
   font-size: 17px;
   line-height: 24px;
@@ -48,14 +55,17 @@
   text-decoration: none;
   text-align: center;
   color: $black;
+  &:hover {
+    opacity: 0.5;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-
-// Для планшетной версии
-
+//Планшетная версия
 @media (min-width: 768px) {
   .main-nav {
-    border: 2px solid red;
     align-self: flex-end;
     width: 50%;
   }
@@ -75,7 +85,7 @@
 @media (min-width: 768px) {
   .main-nav__logo {
     position: absolute;
-    min-height: 89px;
+    height: 89px;
     background: none;
     left: 50px;
     border: none;
@@ -121,12 +131,9 @@
   }
 }
 
-
-//Для десктопной версии
-
+//Десктопная версия
 @media (min-width: 1150px) {
   .main-nav {
-    border: 2px solid red;
     align-self: flex-start;
     width: 50%;
   }
@@ -147,7 +154,14 @@
   .main-nav__logo {
     left: 0;
     right: 0;
+    height: 0;
     text-align: center;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-nav__logo img {
+    margin-top: 10px;
   }
 }
 
@@ -163,8 +177,8 @@
   .main-nav__item {
     border:none;
       &--catalog {
-        border-right: 1px solid $gray;
         z-index: 1;
+        border-right: 1px solid $gray;
       }
       &--knitwork {
         z-index: 1;
@@ -177,7 +191,6 @@
     }
   }
 }
-
 
 @media (min-width: 1150px) {
   .main-nav__link {
@@ -214,5 +227,89 @@
   }
 }
 
+// Раскрывающееся - Закрывающееся меню
+.main-nav__toggle {
+  position: absolute;
+  top: -70px;
+  right: 6px;
+  z-index: 2;
+  display: block;
+  width: 71px;
+  height: 50px;
+  font-size: 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: $white;
+}
 
-// Переключатель
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 26px;
+  width: 19px;
+  height: 2px;
+  background-color: $black;
+  box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: rgba($black, 0.3);
+  box-shadow: 0 8px 0 0 rgba($black, 0.3),
+              0 16px 0 0 rgba($black, 0.3);
+}
+
+.main-nav--opened .main-nav__toggle::before,
+.main-nav--opened .main-nav__toggle::after {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 24px;
+  width: 26px;
+  height: 2px;
+  background-color: $black;
+}
+.main-nav--opened .main-nav__toggle::before {
+  transform: rotate(45deg);
+  box-shadow: none;
+}
+.main-nav--opened .main-nav__toggle::after {
+  transform: rotate(-45deg);
+}
+.main-nav--opened .main-nav__toggle:active::before,
+.main-nav--opened .main-nav__toggle:active::after {
+  background-color: rgba($black, 0.3);
+}
+
+.main-nav--closed .main-nav__items, {
+  display: none;
+  }
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+  }
+
+.main-nav--nojs  {
+  position: static;
+  height: auto;
+  }
+
+.main-nav--nojs .main-nav__items,
+.main-nav--nojs  {
+  display: block;
+  }
+
+
+// Планшетная версия
+@media (min-width: 768px) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+.main-nav--closed .main-nav__items, {
+  display: flex;
+  }
+}
