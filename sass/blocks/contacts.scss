@@ -36,12 +36,12 @@
   text-decoration: none;
   color: $dark-gray;
   border-bottom: 1px solid $mint;
-   &:hover {
+    &:hover {
     color: $mint;
-   }
-   &:active {
+    }
+    &:active {
     opacity: 0.5;
-   }
+    }
 }
 
 .contacts__address {
