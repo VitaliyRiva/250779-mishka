@@ -1,6 +1,12 @@
 .catalog-product {
   margin: 0 0 25px;
   border: 1px solid $gray;
+  &:hover {
+    box-shadow: 0 9px 20px -10px rgba($black, 0.3);
+  }
+  &:active {
+    box-shadow: 0 6px 12px -7px rgba($black, 0.2);
+  }
 }
 
 .catalog-product__descr {
@@ -32,25 +38,36 @@
 }
 
 .catalog-product__price {
+  cursor: pointer;
   line-height: 24px;
   font-weight: bold;
   color: $black;
+    &:hover {
+      opacity: 0.5;
+    }
+    &:active {
+      opacity: 0.2;
+  }
 }
 
 .catalog-product__order {
-  background: url("../img/icon-cart.svg") no-repeat;
-  width: 20px;
-  height: 19px;
   opacity: 0.5;
+    &:hover {
+    opacity: 1;
+  }
+    &:hover path {
+      fill: $mint;
+  }
+    &:active {
+      opacity: 0.2;
+  }
 }
 
 // Планшетная версия
-
-
 @media (min-width: 768px) {
   .catalog-product {
     margin: 52px 0 0 0;
-    border: 1px solid #f1f1f1;
+    border: 1px solid $gray;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -92,6 +109,7 @@
     width: 271px;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 23px;
     border-top: 1px solid $gray;
   }
 }
@@ -103,7 +121,6 @@
 }
 
 // Десктопная версия
-
 @media (min-width: 1150px) {
   .catalog-product {
     margin: 75px 0 0 0;
@@ -147,7 +164,11 @@
 }
 
 @media (min-width: 1150px) {
-  .catalog-product:last-child .catalog-product__descr {
-    padding-top: 20px;
+  .catalog-product {
+    &:last-child {
+      .catalog-product__descr {
+        padding-top: 20px;
+      }
+    }
   }
 }

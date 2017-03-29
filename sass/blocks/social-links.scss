@@ -1,7 +1,7 @@
 .social-links {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px 0;
+  width: auto;
+  text-align: center;
+  padding: 24px 0 20px;
   border-bottom: 1px solid $gray-separate;
 }
 
@@ -9,11 +9,41 @@
   width: 28px;
   height: 28px;
   font-size: 0;
-  background: black;
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+  &:hover path {
+    fill: $mint;
+  }
+  &:active path {
+    opacity: 0.5;
+  }
+}
+
+// Планшетная версия
+@media (min-width: 768px) {
+  .social-links {
+    width: auto;
+    margin-left: 80px;
+    border-bottom: none;
+  }
 }
 
 @media (min-width: 768px) {
-  .social-links {
-    width: 146px;
+  .social-link {
+    width: 28px;
+    height: 28px;
+    font-size: 0;
+    display: inline;
+    &--in {
+      margin-right: 14px;
+    }
+    &--fb {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    &--tw {
+      margin-left: 14px;
+    }
   }
 }

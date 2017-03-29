@@ -1,9 +1,21 @@
 .top-product {
+  position: relative;
   color: $dark-gray;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -49px;
+    width: 100%;
+    height: 13px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: auto 6px;
+  }
 }
 
 .top-product__header {
-  margin-top: 60px;
+  margin-top: 29px;
   padding-bottom: 11px;
 }
 
@@ -25,6 +37,7 @@
   line-height: 20px;
   font-weight: bold;
   color: $mint;
+  text-transform: uppercase;
 }
 
 .top-product__descr {
@@ -66,7 +79,16 @@
   padding: 13px 0 13px 0;
 }
 
-// Для планшета
+//Планшетная версия
+@media (min-width: 768px) {
+  .top-product {
+    &::after {
+    bottom: -76px;
+    height: 24px;
+    background-size: auto 14px;
+    }
+  }
+}
 
 @media (min-width: 768px) {
   .top-product__wrapper {
@@ -158,16 +180,20 @@
 
 @media (min-width: 768px) {
   .top-product__photo img {
-    width: 334px;
-    height:404px;
+    width: 100%;
+    height: auto;
   }
 }
 
-//Для десктопа
-
+//Десктопная версия
 @media (min-width: 1150px) {
   .top-product {
     margin-top: 126px;
+    &::after {
+    bottom: -84px;
+    height: 30px;
+    background-size: auto 26px;
+    }
   }
 }
 
@@ -213,7 +239,6 @@
   }
 }
 
-
 @media (min-width: 1150px) {
   .top-product__text {
     width: 300px;
@@ -244,7 +269,6 @@
   }
 }
 
-
 @media (min-width: 1150px) {
   .top-product__photo {
     margin-left: auto;
@@ -254,49 +278,9 @@
   }
 }
 
-
 @media (min-width: 1150px) {
   .top-product__photo img {
-    width: 525px;
-    height: 639px;
+    width: 100%;
+    height: auto;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// @media (min-width: 1150px) {
-//   .top-product__descr-container {
-//     margin-top: 99px;
-//     margin-left: auto;
-//     margin-right: 60px;
-//   }
-// }
-
-// @media (min-width: 1150px) {
-//   .top-product__price-container {
-//     margin-left: 175px;
-//   }
-// }
-
-// @media (min-width: 1150px) {
-//   .top-product__photo img {
-//     width: 525px;
-//     height:639px;
-//     margin-top: -81px;
-//   }
-// }

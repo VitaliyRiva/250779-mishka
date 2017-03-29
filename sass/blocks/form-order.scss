@@ -1,5 +1,5 @@
 .form-order {
-  margin: 20px 0 0 0;
+  margin: 20px 0 39px 0;
   color: $black;
 }
 
@@ -34,7 +34,6 @@
   }
 }
 
-
 .form-order__type {
   &--radio {
   padding-top: 20px;
@@ -66,6 +65,18 @@
   padding: 0;
   margin: 0;
   padding-top: 15px;
+}
+
+.form-order__item {
+  &--list {
+    position: relative;
+  }
+  svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.2;
+  }
 }
 
 .form-order__label {
@@ -124,11 +135,12 @@
   border: 2px solid $black;
   box-sizing: border-box;
   resize: none;
+  outline: none;
+  padding-top: 10px;
+  padding-left: 15px;
 }
 
 .form-order__textarea::-webkit-input-placeholder {
-  padding-top: 10px;
-  padding-left: 15px;
   font-size: 17px;
   line-height: 18px;
 }
@@ -147,27 +159,33 @@
 }
 
 // Переключатели Радиокнопки мобильная версия
-.form-order__radio-input + .form-order__radio-label::before {
-  content: "";
-  position: absolute;
-  width: 37px;
-  height: 37px;
-  border: 2px solid $black;
-  border-radius: 50%;
-  top: 0;
-  left: 0;
+.form-order__radio-input+ .form-order__radio-label {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    border: 2px solid $black;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
 }
 
-.form-order__radio-input:checked+.form-order__radio-label::after {
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background: $mint;
-  border-radius: 50%;
-  left: 13px;
-  top: 13px;
-  bottom: 0;
+.form-order__radio-input:checked+.form-order__radio-label {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: $mint;
+    border-radius: 50%;
+    left: 13px;
+    top: 13px;
+    bottom: 0;
+    cursor: pointer;
+  }
 }
 
 // Переключатели Чекбокс мобильная версия
@@ -175,18 +193,23 @@
   display: none;
 }
 
-.form-order__checkbox-input+.form-order__checkbox-label::before {
-  content: "";
-  position: absolute;
-  width: 37px;
-  height: 37px;
-  border: 2px solid $black;
-  top: 0px;
-  left: 0;
+.form-order__checkbox-input+.form-order__checkbox-label {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    border: 2px solid $black;
+    top: 0px;
+    left: 0;
+    cursor: pointer;
+  }
 }
 
-.form-order__checkbox-input:checked+.form-order__checkbox-label::before {
-  background: url(../img/icon-tick.svg) 50% 50% no-repeat;
+.form-order__checkbox-input:checked+.form-order__checkbox-label {
+  &::before {
+    background: url("../img/icon-tick.svg") 50% 50% no-repeat;
+  }
 }
 
 //Планшетная версия
@@ -256,8 +279,9 @@
       background: $gray;
     }
     &--extra {
-      padding-top: 30px;
       margin: 0 auto;
+      padding-top: 30px;
+      padding-bottom: 16px;
       flex-wrap: wrap;
       justify-content: space-between;
     }
@@ -332,7 +356,9 @@
   .form-order__textarea {
     width: 75%;
     margin-top: 23px;
-    margin-bottom: 16px;
+    margin-bottom: 21px;
+    padding-top: 16px;
+    padding-left: 15px;
   }
 }
 
@@ -351,60 +377,64 @@
 }
 
 // Переключатели Радиокнопки планшетная версия
-
 @media (min-width: 768px) {
-  .form-order__radio-input + .form-order__radio-label::before {
-    content: "";
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    border: 2px solid $black;
-    border-radius: 50%;
-    top: -2px;
-    left: 1px;
+  .form-order__radio-input+ .form-order__radio-label {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 45px;
+      height: 45px;
+      border: 2px solid $black;
+      border-radius: 50%;
+      top: -2px;
+      left: 1px;
+    }
   }
 }
 
 @media (min-width: 768px) {
-  .form-order__radio-input:checked+.form-order__radio-label::after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: $mint;
-    border-radius: 50%;
-    left: 16px;
-    top: 13px;
-    bottom: 0;
+  .form-order__radio-input:checked+.form-order__radio-label {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: $mint;
+      border-radius: 50%;
+      left: 16px;
+      top: 13px;
+      bottom: 0;
+    }
   }
 }
 
 // Переключатели Чекбокс планшетная версия
 @media (min-width: 768px) {
-  .form-order__checkbox-input+.form-order__checkbox-label::before {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 49px;
-    border: 2px solid $black;
-    top: -5px;
-    left: 0px;
-  }
-}
-
-@media (min-width: 768px) {
-  .form-order__checkbox-input:checked+.form-order__checkbox-label::before {
-    background: url(../img/icon-tick.svg) 50% 50% no-repeat;
+  .form-order__checkbox-input+.form-order__checkbox-label {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 49px;
+      border: 2px solid $black;
+      top: -5px;
+      left: 0px;
+    }
   }
 }
 
 // Десктопная версия
+@media (min-width: 1150px) {
+  .form-order__descr-container {
+    width: 700px;
+    margin: 0 auto;
+  }
+}
 
 @media (min-width: 1150px) {
   .form-order__descr {
-    width: 668px;
-    padding-left: 51px;
-    margin: 132px 175px 0px 175px;
+    width: 700px;
+    margin: 132px 0 0 0;
   }
 }
 
@@ -477,11 +507,35 @@
 }
 
 @media (min-width: 1150px) {
+  .form-order__input {
+    &:hover,
+    &:focus {
+      border-color: $mint;
+    }
+    &--phone,
+    &--email {
+      &:hover + svg,
+      &:focus + svg {
+        fill: $mint;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media (min-width: 1150px) {
 .form-order__textarea {
     width: 700px;
     margin-right: auto;
     box-sizing: border-box;
     padding: 0;
+    outline: none;
+    padding-top: 18px;
+    padding-left: 15px;
+    &:hover,
+    &:focus {
+      border-color: $mint;
+    }
   }
 }
 
@@ -496,5 +550,60 @@
 .form-order__btn.button {
     width: 231px;
     margin-left: 175px;
+  }
+}
+
+// Переключатели Радиокнопки десктопная версия
+@media (min-width: 1150px) {
+  .form-order__radio-input + .form-order__radio-label {
+    &::before {
+      width: 45px;
+      height: 45px;
+      top: -2px;
+      left: 1px;
+    }
+      &:hover::before {
+    border: 2px solid $mint;
+    }
+    &:active::before {
+    border: 2px solid darken($gray, 30%);
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .form-order__radio-input:checked+.form-order__radio-label {
+    &::after {
+      width: 20px;
+      height: 20px;
+      left: 16px;
+      top: 13px;
+      bottom: 0;
+    }
+      &:hover::before {
+    border: 2px solid $mint;
+    }
+    &:active::before {
+    border: 2px solid darken($gray, 30%);
+    }
+  }
+}
+
+// Переключатели Чекбокс десктопная версия
+@media (min-width: 1150px) {
+  .form-order__checkbox-input+.form-order__checkbox-label {
+    &::before {
+      width: 50px;
+      height: 49px;
+      border: 2px solid $black;
+      top: -5px;
+      left: 0px;
+    }
+      &:hover::before {
+    border: 2px solid $mint;
+    }
+    &:active::before {
+    border: 2px solid darken($gray, 30%);
+    }
   }
 }

@@ -8,7 +8,7 @@
   margin: 0 auto;
 }
 
-//Для планшета
+//Планшетная версия
 @media (min-width: 768px) {
   .content-catalog {
     margin: 64px 0 0 0;
@@ -23,7 +23,7 @@
   }
 }
 
-// Десктопная версия
+//Десктопная версия
 @media (min-width: 1150px) {
   .content-catalog__wrapper {
     width: 1050px;

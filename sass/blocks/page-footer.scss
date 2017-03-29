@@ -13,13 +13,45 @@
 }
 
 .page-footer__copyright {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
   text-align: center;
+  margin-top: 22px;
+  margin-bottom: 0;
   padding-bottom: 20px;
+  &:hover path {
+    fill: $dark-mint;
+  }
+  &:active {
+    opacity: 0.5;
+  }
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.page-footer__copyright-link svg {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  padding-left: 20px;
+  fill: $mint;
+}
+
+// Планшетная версия
+@media (min-width: 768px) {
+  .page-footer {
+    margin-top: 23px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
 }
 
 @media (min-width: 768px) {
   .page-footer__wrapper {
     width: 668px;
+    padding: 0 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,12 +61,31 @@
 @media (min-width: 768px) {
   .page-footer__logo {
     display: flex;
+    &:hover path {
+      fill: $mint;
+    }
+     &:active svg {
+      opacity: 0.5;
+    }
   }
 }
 
 @media (min-width: 768px) {
   .page-footer__copyright {
-    text-align: center;
     padding-bottom: 0;
+    margin-top: 9px;
+  }
+}
+
+//Десктопная версия
+@media (min-width: 1150px) {
+  .page-footer {
+    margin-top: 11px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-footer__wrapper {
+    width: 1050px;
   }
 }

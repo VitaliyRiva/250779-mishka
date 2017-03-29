@@ -16,6 +16,7 @@
 }
 
 .contacts__title {
+  position: relative;
   margin-bottom: 26px;
   font-size: 18px;
   line-height: 30px;
@@ -35,6 +36,12 @@
   text-decoration: none;
   color: $dark-gray;
   border-bottom: 1px solid $mint;
+   &:hover {
+    color: $mint;
+   }
+   &:active {
+    opacity: 0.5;
+   }
 }
 
 .contacts__address {
@@ -93,6 +100,15 @@
   .contacts__title {
     font-size: 43px;
     line-height: 50px;
+    &::after {
+    content: "";
+    position: absolute;
+    background: url("../img/icon-flag.svg");
+    width: 46px;
+    height:81px;
+    top: -15px;
+    right: 3px;
+    }
   }
 }
 
@@ -141,10 +157,11 @@
   }
 }
 
-// Для десктопной версии
+//Десктопная версия
 @media (min-width: 1150px) {
   .contacts {
     margin-top: 91px;
+    margin-bottom: 67px;
   }
 }
 
@@ -173,6 +190,10 @@
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 22px;
+    &::after {
+    top: -12px;
+    left: -112px;
+    }
   }
 }
 
@@ -181,7 +202,6 @@
     margin-bottom: 14px;
   }
 }
-
 
 @media (min-width: 1150px) {
   .contacts__address {
