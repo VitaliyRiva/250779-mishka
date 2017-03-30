@@ -77,7 +77,7 @@
   }
 }
 
-.modal-basket__button {
+.modal-basket__button-add {
   width: 100%;
   display: block;
   margin-top: 30px;
@@ -100,6 +100,37 @@
     opacity: 0.5;
   }
 }
+
+// Всплывающее окно
+.modal-content-close {
+  position: absolute;
+  top: 20px;
+  right: 17px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0px;
+  width: 19px;
+  height: 2px;
+  background-color: $black;
+  border-radius: 1px;
+}
+
+.modal-content-close::before { transform: rotate(45deg); }
+.modal-content-close::after { transform: rotate(-45deg); }
+
+
 
 // Планшетная версия
 @media (min-width: 768px) {
