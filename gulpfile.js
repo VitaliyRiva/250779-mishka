@@ -82,7 +82,7 @@ gulp.task("build", function(fn) {
     "images",
     "symbols",
      fn
-    );
+      );
 });
 
 gulp.task("copy", function () {
