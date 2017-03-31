@@ -192,3 +192,21 @@
     }
   }
 }
+
+// Раскрывающееся - Закрывающееся меню
+
+.main-nav--closed .nav-features__items {
+  display: none;
+  }
+
+.main-nav--nojs .nav-features {
+  display: block;
+  }
+
+
+// Планшетная версия
+@media (min-width: 768px) {
+.main-nav--closed .nav-features__items {
+  display: flex;
+  }
+}
