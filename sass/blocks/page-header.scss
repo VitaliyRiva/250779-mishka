@@ -40,8 +40,8 @@
   min-height: 287px;
 }
 
-@media (min-resolution: 144dpi),
-(min-resolution: 1.5dppx) {
+@media (max-width: 767px) and (min-resolution: 144dpi),
+(max-width: 767px) and (min-resolution: 1.5dppx) {
     .page-header__title-img {
       background: url("../img/hero-mobile@2x.jpg") 50% 0 no-repeat;
       background-size: auto 340px;
