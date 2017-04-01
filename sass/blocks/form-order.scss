@@ -113,12 +113,26 @@
   line-height: 18px;
   margin-bottom: 11px;
   padding-bottom: 12px;
+  &:hover,
+  &:focus {
+    border-color: $mint;
+  }
   &--phone {
   padding-top: 10px;
   margin-bottom: 35px;
+  &:hover + svg,
+  &:focus + svg {
+    fill: $mint;
+    opacity: 1;
+    }
   }
   &--email {
   padding-top: 10px;
+  &:hover + svg,
+  &:focus + svg {
+    fill: $mint;
+    opacity: 1;
+    }
   }
 }
 
@@ -138,6 +152,10 @@
   outline: none;
   padding-top: 10px;
   padding-left: 15px;
+  &:hover,
+  &:focus {
+    border-color: $mint;
+  }
 }
 
 .form-order__textarea::-webkit-input-placeholder {
@@ -171,6 +189,12 @@
     left: 0;
     cursor: pointer;
   }
+  &:hover::before {
+    border: 2px solid $mint;
+  }
+  &:active::before {
+    border: 2px solid darken($gray, 30%);
+  }
 }
 
 .form-order__radio-input:checked+.form-order__radio-label {
@@ -185,6 +209,12 @@
     top: 13px;
     bottom: 0;
     cursor: pointer;
+  }
+  &:hover::before {
+    border: 2px solid $mint;
+  }
+  &:active::before {
+    border: 2px solid darken($gray, 30%);
   }
 }
 
@@ -203,6 +233,12 @@
     top: 0px;
     left: 0;
     cursor: pointer;
+  }
+  &:hover::before {
+    border: 2px solid $mint;
+  }
+  &:active::before {
+    border: 2px solid darken($gray, 30%);
   }
 }
 
@@ -507,23 +543,6 @@
 }
 
 @media (min-width: 1150px) {
-  .form-order__input {
-    &:hover,
-    &:focus {
-      border-color: $mint;
-    }
-    &--phone,
-    &--email {
-      &:hover + svg,
-      &:focus + svg {
-        fill: $mint;
-        opacity: 1;
-      }
-    }
-  }
-}
-
-@media (min-width: 1150px) {
 .form-order__textarea {
     width: 700px;
     margin-right: auto;
@@ -532,10 +551,6 @@
     outline: none;
     padding-top: 18px;
     padding-left: 15px;
-    &:hover,
-    &:focus {
-      border-color: $mint;
-    }
   }
 }
 
@@ -562,11 +577,11 @@
       top: -2px;
       left: 1px;
     }
-      &:hover::before {
-    border: 2px solid $mint;
+    &:hover::before {
+      border: 2px solid $mint;
     }
     &:active::before {
-    border: 2px solid darken($gray, 30%);
+      border: 2px solid darken($gray, 30%);
     }
   }
 }
@@ -580,11 +595,11 @@
       top: 13px;
       bottom: 0;
     }
-      &:hover::before {
-    border: 2px solid $mint;
+    &:hover::before {
+      border: 2px solid $mint;
     }
     &:active::before {
-    border: 2px solid darken($gray, 30%);
+      border: 2px solid darken($gray, 30%);
     }
   }
 }
@@ -599,11 +614,11 @@
       top: -5px;
       left: 0px;
     }
-      &:hover::before {
-    border: 2px solid $mint;
+    &:hover::before {
+      border: 2px solid $mint;
     }
     &:active::before {
-    border: 2px solid darken($gray, 30%);
+      border: 2px solid darken($gray, 30%);
     }
   }
 }
