@@ -577,12 +577,6 @@
       top: -2px;
       left: 1px;
     }
-    &:hover::before {
-      border: 2px solid $mint;
-    }
-    &:active::before {
-      border: 2px solid darken($gray, 30%);
-    }
   }
 }
 
@@ -594,12 +588,6 @@
       left: 16px;
       top: 13px;
       bottom: 0;
-    }
-    &:hover::before {
-      border: 2px solid $mint;
-    }
-    &:active::before {
-      border: 2px solid darken($gray, 30%);
     }
   }
 }
@@ -613,12 +601,6 @@
       border: 2px solid $black;
       top: -5px;
       left: 0px;
-    }
-    &:hover::before {
-      border: 2px solid $mint;
-    }
-    &:active::before {
-      border: 2px solid darken($gray, 30%);
     }
   }
 }
