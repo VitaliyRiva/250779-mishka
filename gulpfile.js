@@ -15,7 +15,7 @@ var server = require("browser-sync").create();
 var run = require("run-sequence");
 var del = require("del");
 
-gulp.task("style", function () {
+gulp.task("style", function() {
   gulp.src("sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
