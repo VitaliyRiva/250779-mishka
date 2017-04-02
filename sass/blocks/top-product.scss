@@ -213,7 +213,7 @@
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 493px;
+    height: auto;
     padding-left: 175px;
     position: relative;
   }
@@ -252,6 +252,7 @@
 @media (min-width: 1150px) {
   .top-product__table {
     width: 300px;
+    margin-bottom: 50px;
   }
 }
 
