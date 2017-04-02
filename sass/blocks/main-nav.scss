@@ -277,11 +277,8 @@
   background-color: rgba($black, 0.3);
 }
 
+// Первое меню
 .main-nav__nav--closed .main-nav__items {
-  display: none;
-}
-
-.nav-features--closed .nav-features__items {
   display: none;
 }
 
@@ -307,8 +304,7 @@
 }
 
 @media (min-width: 768px) {
-.main-nav__nav--closed .main-nav__items,
-.nav-features--closed .nav-features__items {
+.main-nav__nav--closed .main-nav__items {
   display: flex;
   }
 }

@@ -194,19 +194,22 @@
 }
 
 // Раскрывающееся - Закрывающееся меню
-
-.main-nav--closed .nav-features__items {
-  display: none;
-  }
-
-.main-nav--nojs .nav-features {
+.nav-features--nojs {
+  position: static;
+  height: auto;
   display: block;
-  }
+}
 
+.nav-features--closed .nav-features__items {
+  display: none;
+}
 
-// Планшетная версия
+.nav-features--nojs .nav-features__items {
+  display: block;
+}
+
 @media (min-width: 768px) {
-.main-nav--closed .nav-features__items {
+.nav-features--closed .nav-features__items {
   display: flex;
   }
 }
