@@ -28,6 +28,21 @@
   line-height: 20px;
   font-weight: bold;
   padding: 84px 0 0;
+  &--flower {
+    width: 190px;
+  }
+  &--money {
+    width: 200px;
+  }
+  &--heart {
+    width: 190px;
+  }
+  &--clew {
+    width: 215px;
+  }
+  &--gift {
+    width: 215px;
+  }
   path {
     fill: $mint
   }
@@ -99,21 +114,34 @@
     padding: 108px 0 0;
     &--flower {
       order:0;
+      width: 210px;
+      padding-right: 124px;
     }
     &--money {
       order:2;
+      width: 241px;
+      padding-right: 93px;
     }
     &--heart {
       order:3;
+      width: 223px;
+      padding-right: 111px;
     }
+
     &--clew {
       order:1;
+      width: 300px;
+      padding-right: 34px;
     }
     &--rocket {
       order:2;
+      width: 313px;
+      padding-right: 21px;
     }
     &--gift {
       order:5;
+      width: 240px;
+      padding-right: 94px;
     }
   }
 }
@@ -180,5 +208,29 @@
   .about__items {
     max-width: 700px;
     margin: 0 auto;
+  }
+}
+
+
+@media (min-width: 1150px) {
+  .about__item {
+    &--flower {
+      padding-right: 140px;
+    }
+    &--money {
+      padding-right: 109px;
+    }
+    &--heart {
+      padding-right: 127px;
+    }
+    &--clew {
+      padding-right: 50px;
+    }
+    &--rocket {
+      padding-right: 37px;
+    }
+    &--gift {
+      padding-right: 110px;
+    }
   }
 }

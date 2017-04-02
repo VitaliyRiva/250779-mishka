@@ -5,6 +5,8 @@
 }
 
 .production-process__product {
+  position: relative;
+  padding-top: 100px;
   margin: 0 0 60px 0;
   border: 1px solid $gray;
   display: flex;
@@ -20,7 +22,7 @@
 .production-process__video {
   position: relative;
   padding: 0 0 21px;
-  order: 1;
+  order: 0;
 }
 
 .production-process__video img {
@@ -44,7 +46,8 @@
 }
 
 .production-process__title {
-  position: relative;
+  position: absolute;
+  top: 0;
   margin: 0;
   padding: 27px 0px 25px 89px;
   font-size: 17px;
@@ -75,8 +78,6 @@
   width: 186px;
   margin-top: 29px;
   margin-bottom: 37px;
-  margin-left: 30px;
-  margin-right: 30px;
   padding: 10px 0px 10px 0px;
   order: 4;
 }
@@ -102,11 +103,13 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0 0 64px 0;
+    padding-top: 0;
   }
 }
 
 @media (min-width: 768px) {
   .production-process__title {
+    position: relative;
     font-size: 20px;
     padding-left: 104px;
   }
@@ -114,7 +117,7 @@
 
 @media (min-width: 768px) {
   .production-process__icon-video {
-    top: 30px;
+    top: 20px;
     left:41px;
   }
 }
@@ -146,10 +149,11 @@
 @media (min-width: 768px) {
   .production-process__order.button {
     width: auto;
-    margin-left: 40px;
-    margin-right: 41px;
+    margin-left: 0;
+    margin-right: 0;
     margin-top: 40px;
     margin-bottom: 52px;
+    display: block;
   }
 }
 
@@ -174,9 +178,9 @@
 @media (min-width: 1150px) {
   .production-process__product {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    height: 465px;
+    height: auto;
     margin: 0 0 109px 0;
   }
 }
@@ -184,13 +188,18 @@
 @media (min-width: 1150px) {
   .production-process__video {
     height: 465px;
-    width: 685px;
+    width: 681px;
+  }
+}
+@media (min-width: 1150px) {
+  .production-process__descr {
+    width: 366px;
   }
 }
 
 @media (min-width: 1150px) {
   .production-process__title {
-    width: 50px;
+    width: 155px;
     padding-left: 75px;
     padding-top: 109px;
   }
@@ -215,7 +224,7 @@
   .production-process__order.button {
     width: 200px;
     margin-top: 49px;
-    margin-left: 80px;
+    margin-left: 0;
     margin-right: 0;
     padding: 12px 12px 12px 12px;
   }
