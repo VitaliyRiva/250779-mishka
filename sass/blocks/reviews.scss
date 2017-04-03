@@ -20,6 +20,8 @@
   width: 260px;
   padding: 0 30px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews__title {
@@ -56,6 +58,7 @@
 .reviews__write.button {
   padding: 13px 0 13px;
   margin: 0;
+  order: 3;
 }
 
 //Планшетная версия
@@ -83,6 +86,7 @@
   .reviews__wrapper {
     width: 668px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     padding: 0 50px;
