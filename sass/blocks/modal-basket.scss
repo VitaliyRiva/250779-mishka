@@ -130,8 +130,6 @@
 .modal-content-close::before { transform: rotate(45deg); }
 .modal-content-close::after { transform: rotate(-45deg); }
 
-
-
 // Планшетная версия
 @media (min-width: 768px) {
   .modal-basket__wrapper {
@@ -166,5 +164,12 @@
     width: 354px;
     margin: auto;
     margin-top: 20px;
+  }
+}
+
+// Модальное окно без JS
+.modal-basket {
+  &--nojs {
+    display: block;
   }
 }

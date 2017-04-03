@@ -32,6 +32,23 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
+gulp.task("stylenormalize", function() {
+  gulp.src("sass/normalize.scss")
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer({browsers: ["last 2 versions"]}),
+      mqpacker({
+        sort: true
+      })
+    ]))
+    .pipe(gulp.dest("build/css"))
+    .pipe(minify())
+    .pipe(rename("normalize.min.css"))
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
+});
+
 gulp.task("images", function() {
   return gulp.src("build/img/**/*.{png,jpg,gif}")
     .pipe(imagemin([
@@ -79,6 +96,7 @@ gulp.task("build", function(fn) {
     "clean",
     "copy",
     "style",
+    "stylenormalize",
     "images",
     "symbols",
       fn
